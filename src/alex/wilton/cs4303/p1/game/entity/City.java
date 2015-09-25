@@ -22,8 +22,10 @@ public class City extends Entity{
     }
 
     public void draw(){
-        App.app.imageMode(App.CORNER);
-        App.app.image(cityImg, x, y, width, height);
+        if(!destroyed) {
+            App.app.imageMode(App.CORNER);
+            App.app.image(cityImg, x, y, width, height);
+        }
     }
 
     public void setDestroyed(boolean destroyed){
@@ -34,4 +36,10 @@ public class City extends Entity{
       return destroyed; 
     }
 
+    public boolean containsPoint(int pointX, int pointY) {
+        if( x <= pointX && pointX <= x + width && y <= pointY && pointY <= y + height)
+            return true;
+        return false;
+
+    }
 }

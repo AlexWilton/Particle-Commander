@@ -35,7 +35,6 @@ public class App extends PApplet{
 
     public void draw() {
         drawBackground();
-        planet.draw();
         game.draw();
     }
 

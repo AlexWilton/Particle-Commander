@@ -27,15 +27,21 @@ public class Game{
         app = App.app;
     }
 
-    public void drawGamePlayInfo(){
+    public void drawGamePlay(){
         app.noFill(); app.stroke(255);
         app.rect(5, 30, 150, 90);
         app.textSize(20);
         app.text("LEVEL: " + lvlNumber, 10, 50);
         app.text("SCORE: " + score, 10, 80);
         app.text("MISSLES: " + numberOfMissles, 10, 110);
-
         app.text("Time to next level: " + lvlTimeRemaining / 60, 300, 50);
+
+        particleWave.maybeCreateNewParticles(lvlNumber);
+        particleWave.integrateAll();
+        particleWave.draw();
+        CollisionChecker collisionChecker = new CollisionChecker(this);
+        collisionChecker.checkForParticleCityCollision();
+        planet.draw();
     }
 
     public void setupLvl(){
@@ -55,10 +61,7 @@ public class Game{
                 break;
             default:
             case STAGE_PLAY:
-                drawGamePlayInfo();
-                particleWave.maybeCreateNewParticles(lvlNumber);
-                particleWave.integrateAll();
-                particleWave.draw();
+                drawGamePlay();
                 break;
         }
 
