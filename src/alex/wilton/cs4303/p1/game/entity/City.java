@@ -23,8 +23,8 @@ public class City extends Entity{
 
     public void draw(){
         if(!destroyed) {
-            App.app.imageMode(App.CORNER);
-            App.app.image(cityImg, x, y, width, height);
+            app.imageMode(App.CORNER);
+            app.image(cityImg, x, y, width, height);
         }
     }
 

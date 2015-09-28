@@ -22,19 +22,17 @@ public class App extends PApplet{
     public void setup() {
         backImg = loadImage(BACKGROUND_IMAGE_FILEPATH);
         size(WINDOW_WIDTH, WINDOW_HEIGHT);
-        System.out.println("Screen size. Width: " + WINDOW_WIDTH + " Height: " + WINDOW_HEIGHT);
         planet = new Planet(4);
         game = new Game(planet);
         game.setupLvl();
     }
 
-    void drawBackground(){
+    public void drawBackgroundImage(){
         imageMode(CORNER);
         image(backImg, 0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
     }
 
     public void draw() {
-        drawBackground();
         game.draw();
     }
 

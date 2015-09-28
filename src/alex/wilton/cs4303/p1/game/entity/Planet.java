@@ -40,8 +40,8 @@ public class Planet extends Entity{
 
     public void draw(){
         //draw planet
-        App.app.fill(255);
-        App.app.rect(0, App.WINDOW_HEIGHT - PLANET_HEIGHT, App.WINDOW_WIDTH, PLANET_HEIGHT);
+        app.fill(255);
+        app.rect(0, App.WINDOW_HEIGHT - PLANET_HEIGHT, App.WINDOW_WIDTH, PLANET_HEIGHT);
 
         //draw Missle Base
         missleBase.draw();

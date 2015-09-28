@@ -3,9 +3,14 @@ package alex.wilton.cs4303.p1.game;
 import alex.wilton.cs4303.p1.App;
 import alex.wilton.cs4303.p1.game.entity.Planet;
 import alex.wilton.cs4303.p1.game.screen.EndOfLvlScreen;
+import alex.wilton.cs4303.p1.game.screen.GameOverScreen;
+import alex.wilton.cs4303.p1.game.screen.GamePlayScreen;
+import alex.wilton.cs4303.p1.game.screen.Screen;
 
 public class Game{
     private App app;
+    private Screen screen; //current screen
+
     private Planet planet;
     private ParticleWave particleWave;
 
@@ -19,29 +24,13 @@ public class Game{
     private final int STAGE_SETUP = 0;
     private final int STAGE_PLAY = 1;
     private final int STAGE_LEVELEND = 2;
+    private final int STAGE_GAMEOVER = 3;
     private int gameStage = STAGE_SETUP;
 
     public Game(Planet planet){
         this.planet = planet;
         setupLvl();
         app = App.app;
-    }
-
-    public void drawGamePlay(){
-        app.noFill(); app.stroke(255);
-        app.rect(5, 30, 150, 90);
-        app.textSize(20);
-        app.text("LEVEL: " + lvlNumber, 10, 50);
-        app.text("SCORE: " + score, 10, 80);
-        app.text("MISSLES: " + numberOfMissles, 10, 110);
-        app.text("Time to next level: " + lvlTimeRemaining / 60, 300, 50);
-
-        particleWave.maybeCreateNewParticles(lvlNumber);
-        particleWave.integrateAll();
-        particleWave.draw();
-        CollisionChecker collisionChecker = new CollisionChecker(this);
-        collisionChecker.checkForParticleCityCollision();
-        planet.draw();
     }
 
     public void setupLvl(){
@@ -51,20 +40,21 @@ public class Game{
     }
 
     public void draw(){
-        lvlTimeRemaining--;
-        if(lvlTimeRemaining == 0) gameStage = STAGE_LEVELEND;
         switch(gameStage){
-            case STAGE_LEVELEND:
-                EndOfLvlScreen screen = new EndOfLvlScreen(this);
-                screen.drawScreen();
-
-                break;
             default:
+            case STAGE_LEVELEND:
+                screen = new EndOfLvlScreen(this);
+                break;
+            case STAGE_GAMEOVER:
+                screen = new GameOverScreen(this);
+                break;
             case STAGE_PLAY:
-                drawGamePlay();
+                lvlTimeRemaining--;
+                if(lvlTimeRemaining == 0) gameStage = STAGE_LEVELEND;
+                screen = new GamePlayScreen(this);
                 break;
         }
-
+        screen.draw();
     }
 
     public int calculateSubTotal(){
@@ -79,14 +69,7 @@ public class Game{
 
 
     public void mousePressed(){
-        switch(gameStage){
-            case STAGE_LEVELEND:
-                EndOfLvlScreen screen = new EndOfLvlScreen(this);
-                screen.mousePressed();
-                break;
-            default:
-                break;
-        }
+        screen.mousePressed();
     }
 
     public Planet getPlanet(){
@@ -122,4 +105,7 @@ public class Game{
     }
 
 
+    public void gameOver() {
+        gameStage = STAGE_GAMEOVER;
+    }
 }

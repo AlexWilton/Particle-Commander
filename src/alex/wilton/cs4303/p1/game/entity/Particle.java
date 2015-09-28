@@ -7,19 +7,25 @@ public class Particle extends Entity{
     private boolean alive = true;
     private PVector position, velocity, acceleration;
 
+    private static final int MAXIMUM_VELOCITY = 2; // Used to simulate Drag
+
     public Particle(int x, int y, float xVel, float yVel, float xAcc, float yAcc) {
         position = new PVector(x, y) ;
         velocity = new PVector(xVel, yVel) ;
         acceleration = new PVector(xAcc, yAcc) ;
     }
 
-    // update position and velocity
-    public void integrate() {
-        position.add(velocity) ;
-        velocity.add(acceleration) ;
 
-        //mark Particle as dead if it falls over the screen
-        if ((position.x < 0) || (position.x > App.WINDOW_WIDTH)) alive = false;
+    public void integrate() {
+        /* Update position and velocity */
+        position.add(velocity);
+        velocity.add(acceleration);
+
+        /* Impose maximum velocity for simulating drag */
+        if(velocity.mag() > MAXIMUM_VELOCITY) velocity.setMag(MAXIMUM_VELOCITY);
+
+        /* Mark Particle as dead if they stray more than half a screen from the view */
+        if ((position.x < -App.WINDOW_WIDTH /2) || (position.x > App.WINDOW_WIDTH * 1.5 )) alive = false;
     }
 
     public void draw(){

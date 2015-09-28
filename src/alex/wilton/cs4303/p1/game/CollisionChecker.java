@@ -21,9 +21,16 @@ public class CollisionChecker {
                 PVector pPosition = p.getPosition();
                 if(city.containsPoint((int) pPosition.x, (int) pPosition.y)){
                     city.setDestroyed(true);
+                    checkForGameOver();
                 }
             }
         }
 
+    }
+
+    public void checkForGameOver() {
+       if(game.getPlanet().citiesRemaining() ==0){
+           game.gameOver();
+       }
     }
 }

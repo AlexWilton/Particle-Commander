@@ -1,16 +1,9 @@
 package alex.wilton.cs4303.p1.game.entity;
 
-import alex.wilton.cs4303.p1.App;
-import processing.core.*;
+import java.lang.Math;
 
 public class MissleBase extends Entity {
-    private static PImage baseImg = null;
-    private static final String BASE_IMAGE_FILEPATH = "images/base.gif";
-    static{
-        baseImg = App.app.loadImage(BASE_IMAGE_FILEPATH);
-    }
     private int x, y, width, height;
-
     public MissleBase(int x, int y, int width, int height){
         this.x = x;
         this.y = y;
@@ -19,11 +12,31 @@ public class MissleBase extends Entity {
     }
 
     public void draw(){
-//       rect(x,y,width,height);
-        App.app.imageMode(App.app.CORNER);
-        App.app.image(baseImg, x, y, width, height);
+        app.rect(x, y, width, height);
+        app.ellipse(x + width / 2, y, (int) (width * 0.8), height * 2);
+        drawMissleTurretLine();
     }
 
-    
+    private void drawMissleTurretLine() {
+        int lineLength = 50;
+        int startX = x + width/2;
+        int startY = y;
+        double angle = Math.atan2(app.mouseY - y, app.mouseX - startX);
 
-}      
+        /*Set right minimum point*/
+        if(angle > 0 && angle < Math.PI) angle = 0;
+
+        int endX = (int) (startX + lineLength * Math.cos(angle));
+        int endY = (int) (startY + lineLength * Math.sin(angle));
+
+        /*Set left minimum point*/
+        if(app.mouseY > startY && app.mouseX < startX){
+            endX = startX - lineLength;
+            endY = startY;
+        }
+        app.strokeWeight(3);
+        app.line(startX, startY, endX, endY);
+    }
+
+
+}
