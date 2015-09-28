@@ -46,6 +46,9 @@ public class Planet extends Entity{
         //draw Missle Base
         missleBase.draw();
 
+        Missle missle = new Missle(missleBase, 400, 400);
+        missle.draw();
+
         //draw cities
         for(City city : cities) city.draw();
     }

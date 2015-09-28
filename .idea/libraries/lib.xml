@@ -4,7 +4,7 @@
       <root url="jar://$PROJECT_DIR$/lib/core.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="http://processing.org/reference/javadoc/core/" />
+      <root url="file://$PROJECT_DIR$/lib/javadoc/everything" />
     </JAVADOC>
     <SOURCES />
   </library>
