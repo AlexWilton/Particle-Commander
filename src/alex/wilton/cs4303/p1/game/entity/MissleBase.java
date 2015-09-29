@@ -12,9 +12,9 @@ public class MissleBase extends Entity {
     }
 
     public void draw(){
-        app.rect(x, y, width, height);
-        app.ellipse(x + width / 2, y, (int) (width * 0.8), height * 2);
-        drawMissleTurretLine();
+//        app.rect(x, y, width, height);
+//        app.ellipse(x + width / 2, y, (int) (width * 0.8), height * 2);
+//        drawMissleTurretLine();
     }
 
     private void drawMissleTurretLine() {
@@ -39,4 +39,11 @@ public class MissleBase extends Entity {
     }
 
 
+    public int getCentralX() {
+        return x + width/2;
+    }
+
+    public int getY() {
+        return y;
+    }
 }

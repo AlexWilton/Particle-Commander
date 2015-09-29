@@ -3,24 +3,30 @@ package alex.wilton.cs4303.p1.game.screen;
 import alex.wilton.cs4303.p1.App;
 import alex.wilton.cs4303.p1.game.CollisionChecker;
 import alex.wilton.cs4303.p1.game.Game;
+import alex.wilton.cs4303.p1.game.MissleSet;
 import alex.wilton.cs4303.p1.game.ParticleWave;
 import alex.wilton.cs4303.p1.game.entity.CrossHair;
+import alex.wilton.cs4303.p1.game.entity.Missle;
 import alex.wilton.cs4303.p1.game.entity.Planet;
 import processing.core.PImage;
 
 public class GamePlayScreen extends Screen{
     private ParticleWave particleWave;
+    private MissleSet misslesInMotion;
     private Planet planet;
     private int lvlNumber, score, numberOfMissles, lvlTimeRemaining;
 
     public GamePlayScreen(Game game){
         super(game);
         particleWave = game.getParticleWave();
+        misslesInMotion = game.getMisslesInMotion();
         planet = game.getPlanet();
         lvlNumber = game.getLvlNumber();
         score = game.getScore();
         numberOfMissles = game.getNumberOfMissles();
         lvlTimeRemaining = game.getLvlTimeRemaining();
+
+        misslesInMotion.addMissle(new Missle(planet.getMissleBase(), 400, 400));
     }
 
     public void draw(){
@@ -44,6 +50,11 @@ public class GamePlayScreen extends Screen{
         CollisionChecker collisionChecker = new CollisionChecker(game);
         collisionChecker.checkForParticleCityCollision();
         planet.draw();
+
+        /* Draw all missiles in flight */
+        misslesInMotion.integrateAll();
+        misslesInMotion.draw();
+
 
         /*Draw CrossHair and disable normal cursor*/
         CrossHair crossHair = new CrossHair();

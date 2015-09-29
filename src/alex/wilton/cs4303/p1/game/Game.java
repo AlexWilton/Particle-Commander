@@ -1,6 +1,7 @@
 package alex.wilton.cs4303.p1.game;
 
 import alex.wilton.cs4303.p1.App;
+import alex.wilton.cs4303.p1.game.entity.Missle;
 import alex.wilton.cs4303.p1.game.entity.Planet;
 import alex.wilton.cs4303.p1.game.screen.EndOfLvlScreen;
 import alex.wilton.cs4303.p1.game.screen.GameOverScreen;
@@ -13,6 +14,7 @@ public class Game{
 
     private Planet planet;
     private ParticleWave particleWave;
+    private MissleSet misslesInMotion;
 
     private int lvlNumber = 1;
     private int score = 0;
@@ -35,7 +37,8 @@ public class Game{
 
     public void setupLvl(){
         particleWave = new ParticleWave();
-        lvlTimeRemaining = (1 + lvlNumber * 5) * 60;
+        misslesInMotion = new MissleSet();
+        lvlTimeRemaining = (1000 + lvlNumber * 5) * 60;
         gameStage = STAGE_PLAY;
     }
 
@@ -104,6 +107,7 @@ public class Game{
         return particleWave;
     }
 
+    public MissleSet getMisslesInMotion() { return misslesInMotion;}
 
     public void gameOver() {
         gameStage = STAGE_GAMEOVER;
