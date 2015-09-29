@@ -4,10 +4,7 @@ import alex.wilton.cs4303.p1.App;
 import alex.wilton.cs4303.p1.game.entity.Missile;
 import alex.wilton.cs4303.p1.game.entity.Particle;
 import alex.wilton.cs4303.p1.game.entity.Planet;
-import alex.wilton.cs4303.p1.game.screen.EndOfLvlScreen;
-import alex.wilton.cs4303.p1.game.screen.GameOverScreen;
-import alex.wilton.cs4303.p1.game.screen.GamePlayScreen;
-import alex.wilton.cs4303.p1.game.screen.Screen;
+import alex.wilton.cs4303.p1.game.screen.*;
 
 public class Game{
     private App app;
@@ -19,7 +16,7 @@ public class Game{
 
     private int lvlNumber = 1;
     private int score = 0;
-    private int numberOfMissiles = 30;
+    private int numberOfMissiles = 15;
     private int particlesDestroyed = 0;
 
     private int lvlTimeRemaining;
@@ -28,6 +25,7 @@ public class Game{
     private final int STAGE_PLAY = 1;
     private final int STAGE_LEVELEND = 2;
     private final int STAGE_GAMEOVER = 3;
+    private final int STAGE_SHOP = 4;
     private int gameStage = STAGE_SETUP;
 
     public Game(Planet planet){
@@ -53,6 +51,9 @@ public class Game{
             case STAGE_GAMEOVER:
                 screen = new GameOverScreen(this);
                 break;
+            case STAGE_SHOP:
+                screen = new ShopScreen(this);
+                break;
             case STAGE_PLAY:
                 lvlTimeRemaining--;
                 if(lvlTimeRemaining == 0) gameStage = STAGE_LEVELEND;
@@ -66,12 +67,19 @@ public class Game{
         return planet.citiesRemaining() * 50 + numberOfMissiles * 2 + particlesDestroyed * 5;
     }
 
-    public void calculateScoreAndGotoNextLevel(){
+    /**
+     * Calculate score from last level. Setup next level. Visit shop (before starting next level)
+     */
+    public void calculateScoreSetupNextLvlAndVisitShop(){
         score += calculateSubTotal();
         lvlNumber++;
         setupLvl();
+        gameStage = STAGE_SHOP;
     }
 
+    public void startLevel(){
+        gameStage = STAGE_PLAY;
+    }
 
     public void mousePressed(){
         screen.mousePressed();
@@ -130,4 +138,23 @@ public class Game{
     }
 
 
+    /**
+     * Attempt to rebuild a city at the cost of 200 points
+     */
+    public void attemptToBuyCity() {
+        if(score >= 200 && planet.citiesRemaining() < 5){
+            score -= 200;
+            planet.rebuildOneCity();
+        }
+    }
+
+    /**
+     * Attempt to buy 10 missiles at the cost of 25 points
+     */
+    public void attemptToBuyMissiles() {
+        if(score >= 25){
+            score -= 25;
+            numberOfMissiles += 10;
+        }
+    }
 }

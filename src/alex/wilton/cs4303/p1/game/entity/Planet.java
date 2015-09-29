@@ -65,4 +65,16 @@ public class Planet extends Entity{
     public MissileBase getMissileBase() {
         return missileBase;
     }
+
+    /**
+     * Rebuilds first destroyed city found. If no destroyed cities, do nothing.
+     */
+    public void rebuildOneCity() {
+        for(City city : cities){
+            if(city.isDestroyed()){
+                city.setDestroyed(false);
+                return;
+            }
+        }
+    }
 }

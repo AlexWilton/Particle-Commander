@@ -4,12 +4,12 @@ import alex.wilton.cs4303.p1.App;
 import alex.wilton.cs4303.p1.game.Game;
 
 public class EndOfLvlScreen extends Screen{
-    int citiesRemaining, numberOfMissles, particlesDestroyed, lvlNumber, score;
+    int citiesRemaining, numberOfMissiles, particlesDestroyed, lvlNumber, score;
 
     public EndOfLvlScreen(Game game){
         super(game);
         citiesRemaining = game.getPlanet().citiesRemaining();
-        numberOfMissles = game.getNumberOfMissiles();
+        numberOfMissiles = game.getNumberOfMissiles();
         particlesDestroyed = game.getParticlesDestroyed();
         lvlNumber = game.getLvlNumber();
         score = game.getScore();
@@ -34,9 +34,9 @@ public class EndOfLvlScreen extends Screen{
         app.text(" (50 X " + citiesRemaining + ")   " + (50 * citiesRemaining), 600, 250);
 
         app.textAlign(app.LEFT);
-        app.text("Remaining Missles: " + numberOfMissles, 50, 280);
+        app.text("Remaining Missiles: " + numberOfMissiles, 50, 280);
         app.textAlign(app.RIGHT);
-        app.text(" (2 X " + numberOfMissles + ")   " + (2 * numberOfMissles), 600, 280);
+        app.text(" (2 X " + numberOfMissiles + ")   " + (2 * numberOfMissiles), 600, 280);
 
         app.textAlign(app.LEFT);
         app.text("Particles Destroyed: " + particlesDestroyed, 50, 310);
@@ -52,18 +52,31 @@ public class EndOfLvlScreen extends Screen{
         app.textAlign(app.CENTER);
         app.text("NEW SCORE: " + newScore + "   (" + oldScore + " + " + subTotal + ")", App.WINDOW_WIDTH / 2, 420);
       
-      /*NEXT LEVEL BUTTON*/
+      /*SHOP BUTTON*/
         app.fill(0, 100, 0);
         app.rect(110, 500, 180, 50, 15);
         app.fill(255);
         app.textAlign(app.LEFT);
-        app.text("NEXT LEVEL", 130, 530);
+        app.text("SHOP", 165, 535);
+
+       /*SKIP SHOP BUTTON*/
+        app.fill(255, 0, 0);
+        app.rect(350, 500, 180, 50, 15);
+        app.fill(255);
+        app.textAlign(app.LEFT);
+        app.text("SKIP SHOP", 375, 535);
     }
 
     public void mousePressed(){
-     /*Listener for NEXT LEVEL button*/
+        /*Listener for SHOP button*/
         if( 110 <= app.mouseX && app.mouseX <= 110 + 180 && 500 <= app.mouseY && app.mouseY <= 500 + 50){
-            game.calculateScoreAndGotoNextLevel();
+            game.calculateScoreSetupNextLvlAndVisitShop();
+        }
+
+        /*Listener for SKIP SHOP button*/
+        if( 350 <= app.mouseX && app.mouseX <= 350 + 180 && 500 <= app.mouseY && app.mouseY <= 500 + 50){
+            game.calculateScoreSetupNextLvlAndVisitShop();
+            game.startLevel();
         }
     }
 
