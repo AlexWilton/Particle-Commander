@@ -5,7 +5,7 @@ import alex.wilton.cs4303.p1.App;
 public class Planet extends Entity{
     private int numberOfCities;
     private City[] cities;
-    private MissleBase missleBase;
+    private MissileBase missileBase;
     private final int SPACE_BETWEEN_CITIES = 30;
     private final int PLANET_HEIGHT = 5;
     private final int cityWidth;
@@ -34,7 +34,7 @@ public class Planet extends Entity{
         int citiesOnLeft = numberOfCities / 2;
         int x = citiesOnLeft * (cityWidth + SPACE_BETWEEN_CITIES) + SPACE_BETWEEN_CITIES;
         int y = App.WINDOW_HEIGHT - height;
-        missleBase = new MissleBase(x,y, MISSLE_BASE_WIDTH, height);
+        missileBase = new MissileBase(x,y, MISSLE_BASE_WIDTH, height);
     }
 
 
@@ -44,7 +44,7 @@ public class Planet extends Entity{
         app.rect(0, App.WINDOW_HEIGHT - PLANET_HEIGHT, App.WINDOW_WIDTH, PLANET_HEIGHT);
 
         //draw Missle Base
-        missleBase.draw();
+        missileBase.draw();
 
         //draw cities
         for(City city : cities) city.draw();
@@ -62,7 +62,7 @@ public class Planet extends Entity{
         return cities;
     }
 
-    public MissleBase getMissleBase() {
-        return missleBase;
+    public MissileBase getMissileBase() {
+        return missileBase;
     }
 }

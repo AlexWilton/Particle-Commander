@@ -61,4 +61,8 @@ public class ParticleWave{
     public HashSet<Particle> getParticles() {
         return particles;
     }
+
+    public void remove(Particle particle) {
+        particles.remove(particle);
+    }
 }

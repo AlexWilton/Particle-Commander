@@ -2,9 +2,9 @@ package alex.wilton.cs4303.p1.game.entity;
 
 import java.lang.Math;
 
-public class MissleBase extends Entity {
+public class MissileBase extends Entity {
     private int x, y, width, height;
-    public MissleBase(int x, int y, int width, int height){
+    public MissileBase(int x, int y, int width, int height){
         this.x = x;
         this.y = y;
         this.width = width;
@@ -12,9 +12,9 @@ public class MissleBase extends Entity {
     }
 
     public void draw(){
-//        app.rect(x, y, width, height);
-//        app.ellipse(x + width / 2, y, (int) (width * 0.8), height * 2);
-//        drawMissleTurretLine();
+        app.rect(x, y, width, height);
+        app.ellipse(x + width / 2, y, (int) (width * 0.8), height * 2);
+        drawMissleTurretLine();
     }
 
     private void drawMissleTurretLine() {

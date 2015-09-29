@@ -9,7 +9,7 @@ public class EndOfLvlScreen extends Screen{
     public EndOfLvlScreen(Game game){
         super(game);
         citiesRemaining = game.getPlanet().citiesRemaining();
-        numberOfMissles = game.getNumberOfMissles();
+        numberOfMissles = game.getNumberOfMissiles();
         particlesDestroyed = game.getParticlesDestroyed();
         lvlNumber = game.getLvlNumber();
         score = game.getScore();

@@ -36,4 +36,8 @@ public class Particle extends Entity{
     public PVector getPosition(){ return position;}
     public PVector getVelocity(){ return velocity;}
     public PVector getAcceleration(){ return acceleration;}
+
+    public void setAlive(boolean alive) {
+        this.alive = alive;
+    }
 }

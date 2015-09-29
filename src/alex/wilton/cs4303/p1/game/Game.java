@@ -1,7 +1,8 @@
 package alex.wilton.cs4303.p1.game;
 
 import alex.wilton.cs4303.p1.App;
-import alex.wilton.cs4303.p1.game.entity.Missle;
+import alex.wilton.cs4303.p1.game.entity.Missile;
+import alex.wilton.cs4303.p1.game.entity.Particle;
 import alex.wilton.cs4303.p1.game.entity.Planet;
 import alex.wilton.cs4303.p1.game.screen.EndOfLvlScreen;
 import alex.wilton.cs4303.p1.game.screen.GameOverScreen;
@@ -14,11 +15,11 @@ public class Game{
 
     private Planet planet;
     private ParticleWave particleWave;
-    private MissleSet misslesInMotion;
+    private MissileSet missilesInMotion;
 
     private int lvlNumber = 1;
     private int score = 0;
-    private int numberOfMissles = 30;
+    private int numberOfMissiles = 30;
     private int particlesDestroyed = 0;
 
     private int lvlTimeRemaining;
@@ -37,8 +38,9 @@ public class Game{
 
     public void setupLvl(){
         particleWave = new ParticleWave();
-        misslesInMotion = new MissleSet();
-        lvlTimeRemaining = (1000 + lvlNumber * 5) * 60;
+        missilesInMotion = new MissileSet();
+        particlesDestroyed = 0;
+        lvlTimeRemaining = (10 + lvlNumber * 5) * 60;
         gameStage = STAGE_PLAY;
     }
 
@@ -61,7 +63,7 @@ public class Game{
     }
 
     public int calculateSubTotal(){
-        return planet.citiesRemaining() * 50 + numberOfMissles * 2 + particlesDestroyed * 5;
+        return planet.citiesRemaining() * 50 + numberOfMissiles * 2 + particlesDestroyed * 5;
     }
 
     public void calculateScoreAndGotoNextLevel(){
@@ -87,8 +89,8 @@ public class Game{
         return score;
     }
 
-    public int getNumberOfMissles() {
-        return numberOfMissles;
+    public int getNumberOfMissiles() {
+        return numberOfMissiles;
     }
 
     public int getParticlesDestroyed() {
@@ -107,9 +109,25 @@ public class Game{
         return particleWave;
     }
 
-    public MissleSet getMisslesInMotion() { return misslesInMotion;}
+    public MissileSet getMissilesInMotion() { return missilesInMotion;}
+
+    public void fireMissileAt(int targetX, int targetY) {
+        if(numberOfMissiles > 0) {
+            missilesInMotion.addMissle(new Missile(planet.getMissileBase(), targetX, targetY));
+            numberOfMissiles--;
+        }
+    }
+
+
+    public void particleShootDown(Particle particle){
+        particlesDestroyed++;
+        particleWave.remove(particle);
+    }
+
 
     public void gameOver() {
         gameStage = STAGE_GAMEOVER;
     }
+
+
 }

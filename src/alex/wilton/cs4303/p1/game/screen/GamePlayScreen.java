@@ -1,59 +1,60 @@
 package alex.wilton.cs4303.p1.game.screen;
 
-import alex.wilton.cs4303.p1.App;
 import alex.wilton.cs4303.p1.game.CollisionChecker;
 import alex.wilton.cs4303.p1.game.Game;
-import alex.wilton.cs4303.p1.game.MissleSet;
+import alex.wilton.cs4303.p1.game.MissileSet;
 import alex.wilton.cs4303.p1.game.ParticleWave;
 import alex.wilton.cs4303.p1.game.entity.CrossHair;
-import alex.wilton.cs4303.p1.game.entity.Missle;
 import alex.wilton.cs4303.p1.game.entity.Planet;
-import processing.core.PImage;
 
 public class GamePlayScreen extends Screen{
     private ParticleWave particleWave;
-    private MissleSet misslesInMotion;
+    private MissileSet missilesInMotion;
     private Planet planet;
-    private int lvlNumber, score, numberOfMissles, lvlTimeRemaining;
+    private int lvlNumber, score, numberOfMissiles, lvlTimeRemaining;
 
     public GamePlayScreen(Game game){
         super(game);
         particleWave = game.getParticleWave();
-        misslesInMotion = game.getMisslesInMotion();
+        missilesInMotion = game.getMissilesInMotion();
         planet = game.getPlanet();
         lvlNumber = game.getLvlNumber();
         score = game.getScore();
-        numberOfMissles = game.getNumberOfMissles();
+        numberOfMissiles = game.getNumberOfMissiles();
         lvlTimeRemaining = game.getLvlTimeRemaining();
-
-        misslesInMotion.addMissle(new Missle(planet.getMissleBase(), 400, 400));
     }
 
     public void draw(){
         app.drawBackgroundImage();
 
         /* Draw player/score info */
-        app.noFill(); app.stroke(255);
+        app.noFill(); app.stroke(255); app.strokeWeight(2);
         app.rect(5, 30, 150, 90);
         app.textSize(20);
         app.text("LEVEL: " + lvlNumber, 10, 50);
         app.text("SCORE: " + score, 10, 80);
-        app.text("MISSLES: " + numberOfMissles, 10, 110);
+        app.text("MISSILES: " + numberOfMissiles, 10, 110);
         app.text("Time to next level: " + lvlTimeRemaining / 60, 300, 50);
+
+        /* Draw all missiles in flight */
+        missilesInMotion.integrateAll();
+        missilesInMotion.draw();
+
 
         /* Maybe create then draw all particles in current wave*/
         particleWave.maybeCreateNewParticles(lvlNumber);
         particleWave.integrateAll();
         particleWave.draw();
 
-        /* Check for destroyed Cities. */
+        /* Check for destroyed Cities */
         CollisionChecker collisionChecker = new CollisionChecker(game);
         collisionChecker.checkForParticleCityCollision();
-        planet.draw();
 
-        /* Draw all missiles in flight */
-        misslesInMotion.integrateAll();
-        misslesInMotion.draw();
+        /* Check for destroyed Particles */
+        collisionChecker.checkForParticleExplosionCollision();
+
+        /*Draw Planet (includes cities and missile base) */
+        planet.draw();
 
 
         /*Draw CrossHair and disable normal cursor*/
@@ -63,6 +64,9 @@ public class GamePlayScreen extends Screen{
 
     }
 
-    public void mousePressed(){}
+    public void mousePressed(){
+        game.fireMissileAt(app.mouseX, app.mouseY);
+    }
+
 
 }
