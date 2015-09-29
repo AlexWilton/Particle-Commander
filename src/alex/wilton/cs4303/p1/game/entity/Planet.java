@@ -77,4 +77,8 @@ public class Planet extends Entity{
             }
         }
     }
+
+    public int getMaxNumberOfCities() {
+        return numberOfCities;
+    }
 }

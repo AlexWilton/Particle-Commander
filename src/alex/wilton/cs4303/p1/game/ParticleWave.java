@@ -25,7 +25,7 @@ public class ParticleWave{
      * @param lvlNumber
      */
     public void maybeCreateNewParticles(int lvlNumber){
-        boolean createNewParticle = rand() < 0.02 + 0.005 * lvlNumber;
+        boolean createNewParticle = rand() < 0.01 + 0.005 * lvlNumber;
         if(createNewParticle){
             /*START PARTICLE AT RANDOM POINT AT TOP OF SCREEN*/
             int posX = (int) (rand() * App.WINDOW_WIDTH);

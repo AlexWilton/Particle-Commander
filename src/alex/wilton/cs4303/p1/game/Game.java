@@ -1,13 +1,11 @@
 package alex.wilton.cs4303.p1.game;
 
-import alex.wilton.cs4303.p1.App;
 import alex.wilton.cs4303.p1.game.entity.Missile;
 import alex.wilton.cs4303.p1.game.entity.Particle;
 import alex.wilton.cs4303.p1.game.entity.Planet;
 import alex.wilton.cs4303.p1.game.screen.*;
 
 public class Game{
-    private App app;
     private Screen screen; //current screen
 
     private Planet planet;
@@ -31,7 +29,6 @@ public class Game{
     public Game(Planet planet){
         this.planet = planet;
         setupLvl();
-        app = App.app;
     }
 
     public void setupLvl(){
@@ -142,7 +139,7 @@ public class Game{
      * Attempt to rebuild a city at the cost of 200 points
      */
     public void attemptToBuyCity() {
-        if(score >= 200 && planet.citiesRemaining() < 5){
+        if(score >= 200 && planet.citiesRemaining() < planet.getMaxNumberOfCities()){
             score -= 200;
             planet.rebuildOneCity();
         }
