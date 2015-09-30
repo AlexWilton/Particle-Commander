@@ -44,8 +44,6 @@ public class GamePlayScreen extends Screen{
         missilesInMotion.integrateAll();
         missilesInMotion.draw();
 
-        if(bomberWave.getBombers().size() == 0) bomberWave.maybeCreateBomber(planet, 99999);
-
         /* Maybe create bomber and draw all bombers in flight */
         bomberWave.maybeCreateBomber(planet, lvlNumber);
         particleWave.addParticles(bomberWave.integrateAll());

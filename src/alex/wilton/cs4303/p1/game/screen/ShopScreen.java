@@ -49,7 +49,7 @@ public class ShopScreen extends Screen{
         app.rect(350, 320, 190, 80, 15);
         app.fill(255);
         app.textAlign(app.LEFT);
-        app.text("MISSILES (x10)", 352, 352);
+        app.text("MISSILES (x10)", 360, 352);
         app.text("(Costs 25)", 380, 382);
 
         app.textSize(25);

@@ -2,11 +2,12 @@
   <library name="lib">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/core.jar!/" />
+      <root url="file://$PROJECT_DIR$/lib/minim" />
     </CLASSES>
     <JAVADOC>
       <root url="file://$PROJECT_DIR$/lib/javadoc/everything" />
-      <root url="file://$PROJECT_DIR$/lib/javadoc/sound" />
     </JAVADOC>
     <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/minim" recursive="false" />
   </library>
 </component>

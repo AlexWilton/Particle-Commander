@@ -25,7 +25,7 @@ public class Sound {
             if (minim == null) {
                 minim = new Minim(App.app);
             }
-            bigExplosion = minim.loadFile("sounds/bigExplosion.mp3");
+            bigExplosion = minim.loadFile("sounds/bigExplosion.wav");
         }
         bigExplosion.play();
         bigExplosion.rewind();

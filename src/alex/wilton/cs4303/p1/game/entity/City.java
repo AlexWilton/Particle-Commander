@@ -30,6 +30,7 @@ public class City extends Entity{
 
     public void setDestroyed(boolean destroyed){
         this.destroyed = destroyed;
+        if(destroyed) Sound.playBigExplosion();
     }
 
     public boolean isDestroyed(){
