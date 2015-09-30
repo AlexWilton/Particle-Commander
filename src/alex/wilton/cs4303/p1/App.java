@@ -22,7 +22,7 @@ public class App extends PApplet{
     public void setup() {
         backImg = loadImage(BACKGROUND_IMAGE_FILEPATH);
         size(WINDOW_WIDTH, WINDOW_HEIGHT);
-        planet = new Planet(6);
+        planet = new Planet(4);
         game = new Game(planet);
         game.setupLvl();
     }

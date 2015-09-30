@@ -19,12 +19,12 @@ public class Game{
 
     private int lvlTimeRemaining;
 
-    private final int STAGE_SETUP = 0;
+    private final int STAGE_PREGAME = 0;
     private final int STAGE_PLAY = 1;
     private final int STAGE_LEVELEND = 2;
     private final int STAGE_GAMEOVER = 3;
     private final int STAGE_SHOP = 4;
-    private int gameStage = STAGE_SETUP;
+    private int gameStage = STAGE_PREGAME;
 
     public Game(Planet planet){
         this.planet = planet;
@@ -36,12 +36,14 @@ public class Game{
         missilesInMotion = new MissileSet();
         particlesDestroyed = 0;
         lvlTimeRemaining = (10 + lvlNumber * 5) * 60;
-        gameStage = STAGE_PLAY;
     }
 
     public void draw(){
         switch(gameStage){
             default:
+            case STAGE_PREGAME:
+                screen = new PreGameScreen(this);
+                break;
             case STAGE_LEVELEND:
                 screen = new EndOfLvlScreen(this);
                 break;

@@ -10,12 +10,12 @@ public class Planet extends Entity{
     private final int PLANET_HEIGHT = 5;
     private final int cityWidth;
     private final int CITY_HEIGHT = 50;
-    private final int MISSLE_BASE_WIDTH = 60;
+    private final int MISSILE_BASE_WIDTH = 60;
 
     public Planet(int numberOfCities){
         this.numberOfCities = numberOfCities;
         cities = new City[numberOfCities];
-        cityWidth = (App.WINDOW_WIDTH - 2*SPACE_BETWEEN_CITIES  - MISSLE_BASE_WIDTH) / numberOfCities - SPACE_BETWEEN_CITIES;
+        cityWidth = (App.WINDOW_WIDTH - 2*SPACE_BETWEEN_CITIES  - MISSILE_BASE_WIDTH) / numberOfCities - SPACE_BETWEEN_CITIES;
         createCities();
         createMissleBase();
     }
@@ -24,7 +24,7 @@ public class Planet extends Entity{
         int y = App.WINDOW_HEIGHT - CITY_HEIGHT;
         for(int cityIndex = 0; cityIndex < numberOfCities; cityIndex++){
             int x = SPACE_BETWEEN_CITIES + cityIndex * (SPACE_BETWEEN_CITIES + cityWidth);
-            if(cityIndex >= numberOfCities / 2) x += MISSLE_BASE_WIDTH + SPACE_BETWEEN_CITIES; //leave space in middle of cities for missle base
+            if(cityIndex >= numberOfCities / 2) x += MISSILE_BASE_WIDTH + SPACE_BETWEEN_CITIES; //leave space in middle of cities for missle base
             cities[cityIndex] = new City(x,y, cityWidth, CITY_HEIGHT);
         }
     }
@@ -34,7 +34,7 @@ public class Planet extends Entity{
         int citiesOnLeft = numberOfCities / 2;
         int x = citiesOnLeft * (cityWidth + SPACE_BETWEEN_CITIES) + SPACE_BETWEEN_CITIES;
         int y = App.WINDOW_HEIGHT - height;
-        missileBase = new MissileBase(x,y, MISSLE_BASE_WIDTH, height);
+        missileBase = new MissileBase(x,y, MISSILE_BASE_WIDTH, height);
     }
 
 

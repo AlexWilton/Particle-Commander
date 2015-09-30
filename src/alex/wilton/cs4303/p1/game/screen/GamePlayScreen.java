@@ -28,6 +28,7 @@ public class GamePlayScreen extends Screen{
         app.drawBackgroundImage();
 
         /* Draw player/score info */
+        app.textAlign(app.LEFT);
         app.noFill(); app.stroke(255); app.strokeWeight(2);
         app.rect(5, 30, 150, 90);
         app.textSize(20);
