@@ -1,6 +1,6 @@
 package alex.wilton.cs4303.p1.game.screen;
 
-import alex.wilton.cs4303.p1.App;
+import alex.wilton.cs4303.p1.game.App;
 import alex.wilton.cs4303.p1.game.Game;
 
 public class EndOfLvlScreen extends Screen{
@@ -25,24 +25,29 @@ public class EndOfLvlScreen extends Screen{
         app.text("Well Done! Level " + lvlNumber + " Survived!", App.WINDOW_WIDTH / 2, 100);
 
         app.fill(0, 0, 255);
-        app.text("POINTS EARNED", App.WINDOW_WIDTH/ 2, 200);
+        app.text("POINTS EARNED", App.WINDOW_WIDTH / 2, 200);
         app.textSize(20);
 
+        /*REMAINING CITIES INFO*/
         app.textAlign(app.LEFT);
         app.text("Remaining Cities: " + citiesRemaining, 50, 250);
         app.textAlign(app.RIGHT);
-        app.text(" (50 X " + citiesRemaining + ")   " + (50 * citiesRemaining), 600, 250);
+        app.text((50 * citiesRemaining), 600, 250);
+        app.text(" (50 X " + citiesRemaining + ")   ", 530, 250);
 
+        /*REMAINING MISSLES INFO*/
         app.textAlign(app.LEFT);
         app.text("Remaining Missiles: " + numberOfMissiles, 50, 280);
         app.textAlign(app.RIGHT);
-        app.text(" (2 X " + numberOfMissiles + ")   " + (2 * numberOfMissiles), 600, 280);
+        app.text((2 * numberOfMissiles), 600, 280);
+        app.text(" (2 X " + numberOfMissiles + ")   ", 530, 280);
 
+        /*PARTICLES DESTROYED INFO*/
         app.textAlign(app.LEFT);
         app.text("Particles Destroyed: " + particlesDestroyed, 50, 310);
         app.textAlign(app.RIGHT);
-        app.text(" (5 X " + particlesDestroyed + ")   " + (5 * particlesDestroyed), 600, 310);
-
+        app.text((5 * particlesDestroyed), 600, 310);
+        app.text(" (5 X " + particlesDestroyed + ")   ", 530, 310);
         int subTotal = game.calculateSubTotal();
         app.text("SUBTOTAL: " + subTotal, 600, 340);
 

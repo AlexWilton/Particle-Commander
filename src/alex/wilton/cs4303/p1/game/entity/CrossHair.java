@@ -1,6 +1,6 @@
 package alex.wilton.cs4303.p1.game.entity;
 
-import alex.wilton.cs4303.p1.App;
+import alex.wilton.cs4303.p1.game.App;
 import processing.core.PImage;
 
 public class CrossHair extends Entity{

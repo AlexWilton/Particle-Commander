@@ -3,14 +3,18 @@ package alex.wilton.cs4303.p1.game;
 import alex.wilton.cs4303.p1.game.entity.Missile;
 import alex.wilton.cs4303.p1.game.entity.Particle;
 import alex.wilton.cs4303.p1.game.entity.Planet;
+import alex.wilton.cs4303.p1.game.entity.collection.BomberWave;
+import alex.wilton.cs4303.p1.game.entity.collection.MissileSet;
+import alex.wilton.cs4303.p1.game.entity.collection.ParticleWave;
 import alex.wilton.cs4303.p1.game.screen.*;
 
 public class Game{
-    private Screen screen; //current screen
+    private Screen screen;
 
     private Planet planet;
     private ParticleWave particleWave;
     private MissileSet missilesInMotion;
+    private BomberWave bomberWave;
 
     private int lvlNumber = 1;
     private int score = 0;
@@ -34,6 +38,7 @@ public class Game{
     public void setupLvl(){
         particleWave = new ParticleWave();
         missilesInMotion = new MissileSet();
+        bomberWave = new BomberWave();
         particlesDestroyed = 0;
         lvlTimeRemaining = (10 + lvlNumber * 5) * 60;
     }
@@ -62,10 +67,17 @@ public class Game{
         screen.draw();
     }
 
+    public void mousePressed(){
+        screen.mousePressed();
+    }
+
+
     public int calculateSubTotal(){
         return planet.citiesRemaining() * 50 + numberOfMissiles * 2 + particlesDestroyed * 5;
     }
 
+
+    /* GAME TRANSITIONS (to a new stage) */
     /**
      * Calculate score from last level. Setup next level. Visit shop (before starting next level)
      */
@@ -75,15 +87,63 @@ public class Game{
         setupLvl();
         gameStage = STAGE_SHOP;
     }
-
     public void startLevel(){
         gameStage = STAGE_PLAY;
     }
-
-    public void mousePressed(){
-        screen.mousePressed();
+    public void gameOver() {
+        gameStage = STAGE_GAMEOVER;
     }
 
+
+
+    /* GAME ACTIONS*/
+
+    /**
+     * If missile available, fire missile at target co-ordinates
+     * @param targetX Target X Co-ordinate
+     * @param targetY Target Y Co-ordinate
+     */
+    public void fireMissileAt(int targetX, int targetY) {
+        if(numberOfMissiles > 0) {
+            missilesInMotion.addMissile(new Missile(planet.getMissileBase(), targetX, targetY));
+            numberOfMissiles--;
+        }
+    }
+
+    /**
+     * Particle has been shot down.
+     * Increase particle destroyed count and destroy particle
+     * @param particle Particle shot down
+     */
+    public void particleShootDown(Particle particle){
+        particlesDestroyed++;
+        particleWave.remove(particle);
+    }
+
+    /**
+     * Attempt to rebuild a city at the cost of 200 points
+     */
+    public void attemptToBuyCity() {
+        if(score >= 200 && planet.citiesRemaining() < planet.getMaxNumberOfCities()){
+            score -= 200;
+            planet.rebuildOneCity();
+        }
+    }
+
+    /**
+     * Attempt to buy 10 missiles at the cost of 25 points
+     */
+    public void attemptToBuyMissiles() {
+        if(score >= 25){
+            score -= 25;
+            numberOfMissiles += 10;
+        }
+    }
+
+
+
+
+    /* GETTERS */
     public Planet getPlanet(){
         return planet;
     }
@@ -108,52 +168,11 @@ public class Game{
         return lvlTimeRemaining;
     }
 
-    public int getGameStage() {
-        return gameStage;
-    }
-
     public ParticleWave getParticleWave() {
         return particleWave;
     }
 
     public MissileSet getMissilesInMotion() { return missilesInMotion;}
 
-    public void fireMissileAt(int targetX, int targetY) {
-        if(numberOfMissiles > 0) {
-            missilesInMotion.addMissle(new Missile(planet.getMissileBase(), targetX, targetY));
-            numberOfMissiles--;
-        }
-    }
-
-
-    public void particleShootDown(Particle particle){
-        particlesDestroyed++;
-        particleWave.remove(particle);
-    }
-
-
-    public void gameOver() {
-        gameStage = STAGE_GAMEOVER;
-    }
-
-
-    /**
-     * Attempt to rebuild a city at the cost of 200 points
-     */
-    public void attemptToBuyCity() {
-        if(score >= 200 && planet.citiesRemaining() < planet.getMaxNumberOfCities()){
-            score -= 200;
-            planet.rebuildOneCity();
-        }
-    }
-
-    /**
-     * Attempt to buy 10 missiles at the cost of 25 points
-     */
-    public void attemptToBuyMissiles() {
-        if(score >= 25){
-            score -= 25;
-            numberOfMissiles += 10;
-        }
-    }
+    public BomberWave getBomberWave() { return bomberWave; }
 }

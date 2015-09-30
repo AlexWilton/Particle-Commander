@@ -1,16 +1,16 @@
 package alex.wilton.cs4303.p1.game.screen;
 
-import alex.wilton.cs4303.p1.App;
+import alex.wilton.cs4303.p1.game.App;
 import alex.wilton.cs4303.p1.game.Game;
 
 public class GameOverScreen extends Screen{
 
-    int citiesRemaining, numberOfMissles, particlesDestroyed, lvlNumber, score;
+    int citiesRemaining, numberOfMissiles, particlesDestroyed, lvlNumber, score;
 
     public GameOverScreen(Game game){
         super(game);
         citiesRemaining = game.getPlanet().citiesRemaining();
-        numberOfMissles = game.getNumberOfMissiles();
+        numberOfMissiles = game.getNumberOfMissiles();
         particlesDestroyed = game.getParticlesDestroyed();
         lvlNumber = game.getLvlNumber();
         score = game.getScore();
@@ -25,26 +25,30 @@ public class GameOverScreen extends Screen{
         app.text("GAME OVER! You made it to Level " + lvlNumber + ".", App.WINDOW_WIDTH / 2, 100);
 
         app.fill(0, 0, 0);
-        app.text("POINTS EARNED FROM THIS LEVEL", App.WINDOW_WIDTH/ 2, 200);
+        app.text("POINTS EARNED FROM THIS LEVEL", App.WINDOW_WIDTH / 2, 200);
         app.textSize(20);
 
         /*REMAINING CITIES INFO*/
         app.textAlign(app.LEFT);
         app.text("Remaining Cities: " + citiesRemaining, 50, 250);
         app.textAlign(app.RIGHT);
-        app.text(" (50 X " + citiesRemaining + ")   " + (50 * citiesRemaining), 600, 250);
+        app.text((50 * citiesRemaining), 600, 250);
+        app.text(" (50 X " + citiesRemaining + ")   ", 530, 250);
 
         /*REMAINING MISSLES INFO*/
         app.textAlign(app.LEFT);
-        app.text("Remaining Missles: " + numberOfMissles, 50, 280);
+        app.text("Remaining Missiles: " + numberOfMissiles, 50, 280);
         app.textAlign(app.RIGHT);
-        app.text(" (2 X " + numberOfMissles + ")   " + (2 * numberOfMissles), 600, 280);
+        app.text((2 * numberOfMissiles), 600, 280);
+        app.text(" (2 X " + numberOfMissiles + ")   ", 530, 280);
 
         /*PARTICLES DESTROYED INFO*/
         app.textAlign(app.LEFT);
         app.text("Particles Destroyed: " + particlesDestroyed, 50, 310);
         app.textAlign(app.RIGHT);
-        app.text(" (5 X " + particlesDestroyed + ")   " + (5 * particlesDestroyed), 600, 310);
+        app.text((5 * particlesDestroyed), 600, 310);
+        app.text(" (5 X " + particlesDestroyed + ")   ", 530, 310);
+
 
         /*SUBTOTAL*/
         int subTotal = game.calculateSubTotal();

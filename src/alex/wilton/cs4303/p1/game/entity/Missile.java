@@ -4,7 +4,7 @@ import alex.wilton.cs4303.p1.game.Vector;
 import processing.core.PVector;
 
 public class Missile extends Entity{
-    public static final int SPEED = 10;
+    public static final int SPEED = 15;
 
     private Vector position;
     private Vector velocity;
@@ -108,16 +108,20 @@ public class Missile extends Entity{
 
 
     /**
-     * If missile is in an exploding state and the particle is within the current blast radius
+     * If missile is in an exploding state and the particle/bomber is within the current blast radius
      * true will be returned (else false)
-     * @param particle Particle to check
+     * @param positionX x co-ordinate of object
+     * @param positionY y co-ordinate of object
      * @return true if particle will be destroyed by missile
      */
-    public boolean willDestroyParticle(Particle particle) {
+    public boolean willDestroyObject(double positionX, double positionY) {
         if(!exploding || currentExplosionRadius == 0)
             return false;
 
-        PVector particlePosition = particle.getPosition();
-        return distance((int) position.x, (int) position.y, particlePosition.x, particlePosition.y) < currentExplosionRadius;
+        return distance((int) position.x, (int) position.y, positionX, positionY) < currentExplosionRadius;
+    }
+
+    public Vector getPosition() {
+        return position;
     }
 }

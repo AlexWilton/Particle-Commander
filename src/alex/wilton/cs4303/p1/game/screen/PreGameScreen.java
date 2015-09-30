@@ -1,6 +1,6 @@
 package alex.wilton.cs4303.p1.game.screen;
 
-import alex.wilton.cs4303.p1.App;
+import alex.wilton.cs4303.p1.game.App;
 import alex.wilton.cs4303.p1.game.Game;
 import processing.core.PImage;
 

@@ -1,16 +1,16 @@
 package alex.wilton.cs4303.p1.game.entity;
 
-import alex.wilton.cs4303.p1.App;
+import alex.wilton.cs4303.p1.game.App;
 import processing.core.*;
 
 public class City extends Entity{
-    private static PImage cityImg = null;
+    private static PImage cityImg;
     private static final String CITY_IMAGE_FILEPATH = "images/city.gif";
     static{
         cityImg = App.app.loadImage(CITY_IMAGE_FILEPATH);
     }
 
-    private int x, y, width, height;
+    public final int x, y, width, height;
     private boolean destroyed = false;
 
     public City(int x, int y, int width, int height){
@@ -18,7 +18,6 @@ public class City extends Entity{
         this.y = y;
         this.width = width;
         this.height = height;
-
     }
 
     public void draw(){
@@ -40,6 +39,7 @@ public class City extends Entity{
         if( x <= pointX && pointX <= x + width && y <= pointY && pointY <= y + height)
             return true;
         return false;
-
     }
+
+
 }

@@ -1,13 +1,303 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f30673d-14c5-46f7-8eaf-097976ee67f1" name="Default" comment="Game divided up into seperate screens">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/crosshair.gif" />
+    <list default="true" id="2f30673d-14c5-46f7-8eaf-097976ee67f1" name="Default" comment="fix uses max number of cities instead of hardcoded 5">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/resources/background.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/spaceship.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/resources/tab.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/resources/titlebar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/resources/titlebar_end.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/Amplitude.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/Amplitude.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/tools/Archiver.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/AudioDevice.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/AudioDevice.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/AudioIn.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/AudioIn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/contrib/AvailableContribution.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/BandPass.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/BandPass.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/Base.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Bomber.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/collection/BomberWave.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/Brackets.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/BrownNoise.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/BrownNoise.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/tools/ColorSelector.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/im/CompositionTextManager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/im/CompositionTextPainter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/contrib/Contribution.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/contrib/ContributionListing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/contrib/ContributionManager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/contrib/ContributionManagerDialog.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/contrib/ContributionType.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/tools/CreateFont.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/DefaultInputHandler.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/Delay.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/Delay.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/Engine.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/Engine.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/Env.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/Env.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/event/Event.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/contrib/ExamplesContribution.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/FFT.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/FFT.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/data/FloatDict.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/data/FloatList.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/Formatter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/opengl/FrameBuffer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/HighPass.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/HighPass.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/HtmlSelection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.MacroRecorder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.NonRecordable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.NonRepeatable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.Wrapper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.backspace.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.backspace_word.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.clipboard_copy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.clipboard_cut.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.clipboard_paste.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.delete.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.delete_word.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.document_end.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.document_home.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.end.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.home.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.insert_break.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.insert_char.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.insert_tab.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.next_char.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.next_line.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.next_page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.next_word.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.overwrite.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.prev_char.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.prev_line.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.prev_page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.prev_word.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.repeat.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/InputHandler.toggle_rect.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/im/InputMethodSupport.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/tools/InstallCommander.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/data/IntDict.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/data/IntList.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/JEditTextArea.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/data/JSONArray.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/data/JSONObject.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/mode/java/preproc/JavaLexer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/mode/java/preproc/JavaRecognizer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/mode/java/preproc/JavaTokenTypes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/event/KeyEvent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/KeywordMap.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/Language.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/Library.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/opengl/LinePath.PathIterator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/opengl/LinePath.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/exec/LineProcessor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/opengl/LineStroker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/platform/LinuxPlatform.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/contrib/LocalContribution.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/LowPass.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/LowPass.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/platform/MacPlatform.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/MethClaInterface.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/MethClaInterface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/Mix.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/Mix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/Mode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/contrib/ModeContribution.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/event/MouseEvent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/Noise.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/Oscillator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/PApplet.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/PConstants.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/PFont.Glyph.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/PFont.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/opengl/PGL.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/PGraphics.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/opengl/PGraphics2D.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/opengl/PGraphics3D.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/opengl/PGraphicsOpenGL.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/PImage.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/opengl/PJOGL.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/PMatrix.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/PMatrix2D.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/PMatrix3D.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/opengl/PShader.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/PShape.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/PShapeOBJ.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/opengl/PShapeOpenGL.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/PShapeSVG.Font.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/PShapeSVG.FontGlyph.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/PShapeSVG.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/PStyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/PSurface.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/opengl/PSurfaceJOGL.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/PSurfaceNone.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/PVector.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/PdeInputHandler.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/PdeKeywords.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/mode/java/preproc/PdeLexer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/mode/java/preproc/PdePartialTokenTypes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/mode/java/preproc/PdeRecognizer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/PdeTextAreaDefaults.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/mode/java/preproc/PdeTokenTypes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/PinkNoise.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/PinkNoise.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/Platform.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/Preferences.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/exec/ProcessHelper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/exec/ProcessRegistry.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/exec/ProcessResult.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/Pulse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/Pulse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/Reverb.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/Reverb.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/RunnerListener.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/SawOsc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/SawOsc.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/Settings.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/SinOsc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/SinOsc.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/SingleInstance.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/Sketch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/SketchCode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/SketchException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/SketchReference.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/data/Sort.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/Sound.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/SoundFile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/SoundFile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/SoundObject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/SqrOsc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/SqrOsc.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/exec/StreamPump.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/exec/StreamRedirectThread.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/data/StringDict.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/data/StringList.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/SyntaxDocument.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/SyntaxStyle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/exec/SystemOutSiphon.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/data/Table.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/data/TableRow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/TextAreaDefaults.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/TextAreaPainter.Highlight.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/TextAreaPainter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/opengl/Texture.Parameters.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/opengl/Texture.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/platform/ThinkDifferent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/ThinkDifferent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/Token.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/TokenMarker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/tools/Tool.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/contrib/ToolContribution.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/event/TouchEvent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/TriOsc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/TriOsc.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/UpdateCheck.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/WebServer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/WhiteNoise.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/processing/sound/WhiteNoise.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/platform/WindowsPlatform.WinLibC.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/platform/WindowsPlatform.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/platform/WindowsRegistry.REGISTRY_ROOT_KEY.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/platform/WindowsRegistry.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/data/XML.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/allclasses-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/allclasses-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/allclasses-noframe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/allclasses-noframe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/constant-values.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/constant-values.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/deprecated-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/deprecated-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/help-doc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/help-doc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/index-all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/index-all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/overview-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/overview-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/overview-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/overview-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/contrib/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/exec/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/platform/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/im/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/tools/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/data/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/event/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/mode/java/preproc/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/opengl/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/package-list" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/package-list" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/contrib/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/exec/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/platform/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/im/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/tools/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/data/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/event/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/mode/java/preproc/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/opengl/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/contrib/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/exec/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/platform/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/syntax/im/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/app/tools/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/core/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/data/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/event/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/mode/java/preproc/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/processing/opengl/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/processing/sound/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/serialized-form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/everything/stylesheet.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javadoc/sound/stylesheet.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/App.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/ParticleWave.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/App.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/App.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/MissileSet.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/collection/MissileSet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/ParticleWave.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/collection/ParticleWave.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/entity/City.class" afterPath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/entity/City.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/screen/EndOfLvlScreen.class" afterPath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/screen/EndOfLvlScreen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/entity/Entity.class" afterPath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/entity/Entity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/Game.class" afterPath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/Game.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/main/Main.class" afterPath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/main/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/entity/Particle.class" afterPath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/entity/Particle.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/entity/Planet.class" afterPath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/entity/Planet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Missle.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Missle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/City.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/City.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/CollisionChecker.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/CollisionChecker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/CrossHair.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/CrossHair.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/EndOfLvlScreen.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/EndOfLvlScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Entity.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Entity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/Game.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/Game.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/GameOverScreen.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/GameOverScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/GamePlayScreen.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/GamePlayScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/main/Main.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/main/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Missile.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Missile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Particle.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Particle.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Planet.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Planet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/PreGameScreen.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/PreGameScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/Screen.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/Screen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/ShopScreen.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/ShopScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/Vector.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/Vector.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ParticleCommander.iws" />
@@ -31,14 +321,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Screen.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/Screen.java">
+      <file leaf-file-name="Bomber.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Bomber.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+              <caret line="120" column="33" selection-start-line="120" selection-start-column="33" selection-end-line="120" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2520#2521#0" expanded="true" />
+                <element signature="e#2605#2606#0" expanded="true" />
+                <element signature="e#2936#2937#0" expanded="true" />
+                <element signature="e#2965#2966#0" expanded="true" />
+                <element signature="e#3010#3011#0" expanded="true" />
+                <element signature="e#3046#3047#0" expanded="true" />
+                <element signature="e#3423#3424#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CollisionChecker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/CollisionChecker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="58" column="58" selection-start-line="57" selection-start-column="53" selection-end-line="58" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#411#412#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Missile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Missile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="116" column="37" selection-start-line="116" selection-start-column="37" selection-end-line="116" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3981#3982#0" expanded="true" />
+                <element signature="e#4012#4013#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="176" column="14" selection-start-line="176" selection-start-column="14" selection-end-line="176" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2140#2141#0" expanded="true" />
+                <element signature="e#2177#2178#0" expanded="true" />
+                <element signature="e#2680#2681#0" expanded="true" />
+                <element signature="e#2718#2719#0" expanded="true" />
+                <element signature="e#2747#2748#0" expanded="true" />
+                <element signature="e#2789#2790#0" expanded="true" />
+                <element signature="e#4056#4057#0" expanded="true" />
+                <element signature="e#4085#4086#0" expanded="true" />
+                <element signature="e#4118#4119#0" expanded="true" />
+                <element signature="e#4150#4151#0" expanded="true" />
+                <element signature="e#4179#4180#0" expanded="true" />
+                <element signature="e#4207#4208#0" expanded="true" />
+                <element signature="e#4247#4248#0" expanded="true" />
+                <element signature="e#4286#4287#0" expanded="true" />
+                <element signature="e#4328#4329#0" expanded="true" />
+                <element signature="e#4369#4370#0" expanded="true" />
+                <element signature="e#4409#4410#0" expanded="true" />
+                <element signature="e#4448#4449#0" expanded="true" />
+                <element signature="e#4493#4494#0" expanded="true" />
+                <element signature="e#4528#4529#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sound.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/Sound.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.26259947">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -47,42 +414,28 @@
         <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/GamePlayScreen.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+              <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2914#2915#0" expanded="true" />
+                <element signature="e#2972#2973#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Missle.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Missle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38196287">
-              <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CrossHair.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/CrossHair.java">
+      <file leaf-file-name="BomberWave.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/collection/BomberWave.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#652#653#0" expanded="true" />
+                <element signature="e#700#701#0" expanded="true" />
+                <element signature="e#957#958#0" expanded="true" />
+                <element signature="e#987#988#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MissleBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/MissleBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="65" selection-start-line="28" selection-start-column="8" selection-end-line="29" selection-end-column="65" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -91,7 +444,7 @@
         <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Particle.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="58" />
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="39" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,12 +452,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Planet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Planet.java">
+      <file leaf-file-name="ParticleWave.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/collection/ParticleWave.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-              <folding />
+              <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#408#409#0" expanded="true" />
+                <element signature="e#454#455#0" expanded="true" />
+                <element signature="e#2719#2720#0" expanded="true" />
+                <element signature="e#2765#2766#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,21 +504,34 @@
         <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/Game.java" />
         <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/ParticleWave.java" />
         <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/screen/EndOfLvlScreen.java" />
-        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/ParticleWave.java" />
         <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/Screen.java" />
-        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/CollisionChecker.java" />
-        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/App.java" />
-        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/Game.java" />
         <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Entity.java" />
-        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/City.java" />
-        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Particle.java" />
         <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/CrossHair.java" />
-        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/GamePlayScreen.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/Missles.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/MissleBase.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Missle.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/MissileBase.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/MissleSet.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/MissileSet.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/ShopScreen.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/ParticleWave.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Planet.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/Vector.java" />
         <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/GameOverScreen.java" />
         <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/EndOfLvlScreen.java" />
-        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/MissleBase.java" />
-        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Planet.java" />
-        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Missle.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/App.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Particle.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/collection/BomberSet.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/Game.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/collection/MissileSet.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/collection/ParticleWave.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/City.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/collection/BomberWave.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/GamePlayScreen.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Missile.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Bomber.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/CollisionChecker.java" />
+        <option value="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/Sound.java" />
       </list>
     </option>
   </component>
@@ -209,9 +581,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,7 +615,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="p1" />
+              <option name="myItemId" value="sound" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -302,64 +673,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="p1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="screen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParticleCommander" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParticleCommander" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="p1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParticleCommander" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParticleCommander" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,7 +687,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/javadoc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/javadoc/sound" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -379,7 +699,12 @@
     <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="alex.wilton.cs4303.p1.game.entity.collection" />
+      <recent name="alex.wilton.cs4303.p1.game" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/alex/wilton/cs4303/p1" />
     </key>
@@ -391,10 +716,134 @@
       <recent name="alex.wilton.cs4303.p1" />
     </key>
   </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/App.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/Game.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/ParticleWave.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/entity/City.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/entity/Entity.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/entity/Particle.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/entity/Planet.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/screen/EndOfLvlScreen.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/main/Main.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/alex/wilton/cs4303/p1/App.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/Game.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Planet.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/GamePlayScreen.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/images/missileLauncher.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/PreGameScreen.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
   <component name="RunManager" selected="Application.Main (1)">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="alex.wilton.cs4303.p1.App" />
+      <option name="MAIN_CLASS_NAME" value="alex.wilton.cs4303.p1.game.App" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -700,7 +1149,7 @@
     </configuration>
     <configuration default="false" name="Unnamed" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="0" />
-      <option name="MAIN_CLASS_NAME" value="alex.wilton.cs4303.p1.App" />
+      <option name="MAIN_CLASS_NAME" value="alex.wilton.cs4303.p1.game.App" />
       <option name="HEIGHT" value="0" />
       <module name="ParticleCommander" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -734,7 +1183,10 @@
       <option name="number" value="Default" />
       <updated>1443188881237</updated>
       <workItem from="1443188882596" duration="10349000" />
-      <workItem from="1443446360861" duration="10898000" />
+      <workItem from="1443446360861" duration="10926000" />
+      <workItem from="1443526263057" duration="2426000" />
+      <workItem from="1443553481545" duration="8862000" />
+      <workItem from="1443616155699" duration="13089000" />
     </task>
     <task id="LOCAL-00001" summary="cities can now be destroyed">
       <created>1443199942094</created>
@@ -748,15 +1200,45 @@
       <option name="project" value="LOCAL" />
       <updated>1443456480533</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="work started on missles">
+      <created>1443457407754</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1443457407754</updated>
+    </task>
+    <task id="LOCAL-00004" summary="missles move (needs improving)">
+      <created>1443528689368</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1443528689368</updated>
+    </task>
+    <task id="LOCAL-00005" summary="missile now can shot down particles">
+      <created>1443559007259</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1443559007259</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Shop added">
+      <created>1443562012661</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1443562012661</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix uses max number of cities instead of hardcoded 5">
+      <created>1443562343991</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1443562343991</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21247000" />
+    <option name="totallyTimeSpent" value="45652000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="27" width="1922" height="1054" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -765,13 +1247,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944915" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17161018" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944915" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17161018" sideWeight="0.496875" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944915" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944915" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944915" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -780,6 +1262,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="2029" y="159" width="1722" height="854" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -799,11 +1282,16 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <MESSAGE value="cities can now be destroyed" />
     <MESSAGE value="Game divided up into seperate screens" />
-    <option name="LAST_COMMIT_MESSAGE" value="Game divided up into seperate screens" />
+    <MESSAGE value="work started on missles" />
+    <MESSAGE value="missles move (needs improving)" />
+    <MESSAGE value="missile now can shot down particles" />
+    <MESSAGE value="Shop added" />
+    <MESSAGE value="fix uses max number of cities instead of hardcoded 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix uses max number of cities instead of hardcoded 5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -812,18 +1300,132 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/ParticleWave.java">
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/CrossHair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/MissileBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Particle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2637#2638#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/collection/ParticleWave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;method#rand#0;class#ParticleWave#0" expanded="false" />
+            <element signature="e#3009#3010#0" expanded="true" />
+            <element signature="e#3051#3052#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Planet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="39" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/Screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/GamePlayScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2914#2915#0" expanded="true" />
+            <element signature="e#2972#2973#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Missile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/CrossHair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/MissileBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="65" selection-start-line="28" selection-start-column="8" selection-end-line="29" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Particle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2637#2638#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Planet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/collection/ParticleWave.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
           <folding>
             <element signature="docComment;method#rand#0;class#ParticleWave#0" expanded="false" />
-            <element signature="e#1669#1670#0" expanded="true" />
-            <element signature="e#1727#1728#0" expanded="true" />
-            <element signature="e#1794#1795#0" expanded="true" />
-            <element signature="e#1846#1847#0" expanded="true" />
-            <element signature="e#1893#1894#0" expanded="true" />
-            <element signature="e#1925#1926#0" expanded="true" />
+            <element signature="e#3009#3010#0" expanded="true" />
+            <element signature="e#3051#3052#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -834,26 +1436,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
-            <element signature="e#2018#2019#0" expanded="true" />
-            <element signature="e#2050#2051#0" expanded="true" />
-            <element signature="e#2079#2080#0" expanded="true" />
-            <element signature="e#2112#2113#0" expanded="true" />
-            <element signature="e#2144#2145#0" expanded="true" />
-            <element signature="e#2173#2174#0" expanded="true" />
-            <element signature="e#2201#2202#0" expanded="true" />
-            <element signature="e#2240#2241#0" expanded="true" />
-            <element signature="e#2278#2279#0" expanded="true" />
-            <element signature="e#2320#2321#0" expanded="true" />
-            <element signature="e#2361#2362#0" expanded="true" />
-            <element signature="e#2401#2402#0" expanded="true" />
-            <element signature="e#2440#2441#0" expanded="true" />
-            <element signature="e#2473#2474#0" expanded="true" />
-            <element signature="e#2505#2506#0" expanded="true" />
-            <element signature="e#2550#2551#0" expanded="true" />
-            <element signature="e#2585#2586#0" expanded="true" />
-            <element signature="e#2616#2617#0" expanded="true" />
-            <element signature="e#2658#2659#0" expanded="true" />
+            <element signature="e#3431#3432#0" expanded="false" />
+            <element signature="e#3506#3507#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -862,21 +1446,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-          <folding>
-            <element signature="e#133#134#0" expanded="true" />
-            <element signature="e#190#191#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/App.java">
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-            <element signature="e#908#909#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -886,9 +1464,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -897,7 +1473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -907,6 +1482,7 @@
           <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2637#2638#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -915,7 +1491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,10 +1498,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-          <folding>
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2187#2188#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -936,6 +1508,8 @@
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#624#625#0" expanded="false" />
+            <element signature="e#1104#1105#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -968,125 +1542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/core.jar!/processing/core/PVector.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/CollisionChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.569869">
-          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-          <folding>
-            <element signature="e#133#134#0" expanded="true" />
-            <element signature="e#190#191#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
-            <element signature="e#2018#2019#0" expanded="true" />
-            <element signature="e#2050#2051#0" expanded="true" />
-            <element signature="e#2079#2080#0" expanded="true" />
-            <element signature="e#2112#2113#0" expanded="true" />
-            <element signature="e#2144#2145#0" expanded="true" />
-            <element signature="e#2173#2174#0" expanded="true" />
-            <element signature="e#2201#2202#0" expanded="true" />
-            <element signature="e#2240#2241#0" expanded="true" />
-            <element signature="e#2278#2279#0" expanded="true" />
-            <element signature="e#2320#2321#0" expanded="true" />
-            <element signature="e#2361#2362#0" expanded="true" />
-            <element signature="e#2401#2402#0" expanded="true" />
-            <element signature="e#2440#2441#0" expanded="true" />
-            <element signature="e#2473#2474#0" expanded="true" />
-            <element signature="e#2505#2506#0" expanded="true" />
-            <element signature="e#2550#2551#0" expanded="true" />
-            <element signature="e#2585#2586#0" expanded="true" />
-            <element signature="e#2616#2617#0" expanded="true" />
-            <element signature="e#2658#2659#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-            <element signature="e#908#909#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20826447">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/ParticleWave.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;method#rand#0;class#ParticleWave#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/City.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/GameOverScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/EndOfLvlScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/CrossHair.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1097,27 +1552,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/MissleBase.java">
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/MissileBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="65" selection-start-line="28" selection-start-column="8" selection-end-line="29" selection-end-column="65" />
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/GamePlayScreen.java">
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/ShopScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/Screen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.35371178">
           <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1125,28 +1578,239 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Particle.java">
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="58" />
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/GameOverScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3580902">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="49" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Planet.java">
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.52519894">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Missle.java">
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/EndOfLvlScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38196287">
-          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+        <state vertical-scroll-proportion="-0.0026525198">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/core.jar!/processing/core/PVector.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4201102">
+          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Planet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="35" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
+          <folding>
+            <element signature="e#2534#2535#0" expanded="true" />
+            <element signature="e#2571#2572#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/collection/MissileSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/City.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/collection/ParticleWave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#2719#2720#0" expanded="true" />
+            <element signature="e#2765#2766#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Particle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="39" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/GamePlayScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2914#2915#0" expanded="true" />
+            <element signature="e#2972#2973#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/collection/BomberWave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#957#958#0" expanded="true" />
+            <element signature="e#987#988#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Missile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="116" column="37" selection-start-line="116" selection-start-column="37" selection-end-line="116" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3981#3982#0" expanded="true" />
+            <element signature="e#4012#4013#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Bomber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="120" column="33" selection-start-line="120" selection-start-column="33" selection-end-line="120" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2520#2521#0" expanded="true" />
+            <element signature="e#2605#2606#0" expanded="true" />
+            <element signature="e#2936#2937#0" expanded="true" />
+            <element signature="e#2965#2966#0" expanded="true" />
+            <element signature="e#3010#3011#0" expanded="true" />
+            <element signature="e#3046#3047#0" expanded="true" />
+            <element signature="e#3423#3424#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14323607">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+          <folding>
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/CollisionChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="58" selection-start-line="57" selection-start-column="53" selection-end-line="58" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="176" column="14" selection-start-line="176" selection-start-column="14" selection-end-line="176" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2140#2141#0" expanded="true" />
+            <element signature="e#2177#2178#0" expanded="true" />
+            <element signature="e#2680#2681#0" expanded="true" />
+            <element signature="e#2718#2719#0" expanded="true" />
+            <element signature="e#2747#2748#0" expanded="true" />
+            <element signature="e#2789#2790#0" expanded="true" />
+            <element signature="e#4056#4057#0" expanded="true" />
+            <element signature="e#4085#4086#0" expanded="true" />
+            <element signature="e#4118#4119#0" expanded="true" />
+            <element signature="e#4150#4151#0" expanded="true" />
+            <element signature="e#4179#4180#0" expanded="true" />
+            <element signature="e#4207#4208#0" expanded="true" />
+            <element signature="e#4247#4248#0" expanded="true" />
+            <element signature="e#4286#4287#0" expanded="true" />
+            <element signature="e#4328#4329#0" expanded="true" />
+            <element signature="e#4369#4370#0" expanded="true" />
+            <element signature="e#4409#4410#0" expanded="true" />
+            <element signature="e#4448#4449#0" expanded="true" />
+            <element signature="e#4493#4494#0" expanded="true" />
+            <element signature="e#4528#4529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/processing/sound/AudioDevice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14323607">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/processing/sound/SoundFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9761273">
+          <caret line="191" column="4" selection-start-line="28" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/Sound.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26259947">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>

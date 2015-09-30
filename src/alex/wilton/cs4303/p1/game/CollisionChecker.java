@@ -1,5 +1,6 @@
 package alex.wilton.cs4303.p1.game;
 
+import alex.wilton.cs4303.p1.game.entity.Bomber;
 import alex.wilton.cs4303.p1.game.entity.City;
 import alex.wilton.cs4303.p1.game.entity.Missile;
 import alex.wilton.cs4303.p1.game.entity.Particle;
@@ -15,6 +16,10 @@ public class CollisionChecker {
         this.game = game;
     }
 
+    /**
+     * Look to see if a particle has hit a city. If so,
+     * mark the city as destroyed and check for game over.
+     */
     public void checkForParticleCityCollision(){
         Set<Particle> particles = game.getParticleWave().getParticles();
         City[] cities = game.getPlanet().getCities();
@@ -30,6 +35,23 @@ public class CollisionChecker {
 
     }
 
+
+    public void checkForParticleBomberCollision(){
+        Set<Missile> missiles = game.getMissilesInMotion().getMissles();
+        Set<Bomber> bombers = game.getBomberWave().getBombers();
+        for(Bomber bomber : bombers){
+            for(Missile missile : missiles) {
+                Vector position = bomber.getPosition();
+                if(missile.willDestroyObject(position.x, position.y)){
+                    bomber.setActive(false);
+                    break;
+                }
+            }
+        }
+    }
+
+
+
     /**
      * Look for particles caught in a missile's explosion radius
      */
@@ -40,8 +62,9 @@ public class CollisionChecker {
         Set<Missile> missiles = game.getMissilesInMotion().getMissles();
         for(Particle particle : particles){
             for(Missile missile : missiles){
-                if(missile.willDestroyParticle(particle)){
-                    particle.setAlive(false);
+                PVector position = particle.getPosition();
+                if(missile.willDestroyObject(position.x, position.y)){
+                    particle.setActive(false);
                     particlesShotDown.add(particle);
                     break;
                 }
@@ -51,6 +74,9 @@ public class CollisionChecker {
         for(Particle p : particlesShotDown) game.particleShootDown(p);
     }
 
+    /**
+     * If game is over (no cities remaining), move to game over screen
+     */
     public void checkForGameOver() {
        if(game.getPlanet().citiesRemaining() ==0){
            game.gameOver();

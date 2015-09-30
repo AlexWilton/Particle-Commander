@@ -5,6 +5,7 @@
     </CLASSES>
     <JAVADOC>
       <root url="file://$PROJECT_DIR$/lib/javadoc/everything" />
+      <root url="file://$PROJECT_DIR$/lib/javadoc/sound" />
     </JAVADOC>
     <SOURCES />
   </library>

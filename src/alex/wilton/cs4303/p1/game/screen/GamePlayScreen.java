@@ -2,14 +2,16 @@ package alex.wilton.cs4303.p1.game.screen;
 
 import alex.wilton.cs4303.p1.game.CollisionChecker;
 import alex.wilton.cs4303.p1.game.Game;
-import alex.wilton.cs4303.p1.game.MissileSet;
-import alex.wilton.cs4303.p1.game.ParticleWave;
+import alex.wilton.cs4303.p1.game.entity.collection.BomberWave;
+import alex.wilton.cs4303.p1.game.entity.collection.MissileSet;
+import alex.wilton.cs4303.p1.game.entity.collection.ParticleWave;
 import alex.wilton.cs4303.p1.game.entity.CrossHair;
 import alex.wilton.cs4303.p1.game.entity.Planet;
 
 public class GamePlayScreen extends Screen{
     private ParticleWave particleWave;
     private MissileSet missilesInMotion;
+    private BomberWave bomberWave;
     private Planet planet;
     private int lvlNumber, score, numberOfMissiles, lvlTimeRemaining;
 
@@ -17,6 +19,7 @@ public class GamePlayScreen extends Screen{
         super(game);
         particleWave = game.getParticleWave();
         missilesInMotion = game.getMissilesInMotion();
+        bomberWave = game.getBomberWave();
         planet = game.getPlanet();
         lvlNumber = game.getLvlNumber();
         score = game.getScore();
@@ -41,15 +44,23 @@ public class GamePlayScreen extends Screen{
         missilesInMotion.integrateAll();
         missilesInMotion.draw();
 
+        if(bomberWave.getBombers().size() == 0) bomberWave.maybeCreateBomber(planet, 99999);
 
-        /* Maybe create then draw all particles in current wave*/
+        /* Maybe create bomber and draw all bombers in flight */
+        bomberWave.maybeCreateBomber(planet, lvlNumber);
+        particleWave.addParticles(bomberWave.integrateAll());
+        bomberWave.draw();
+
+        /* Maybe create particles, maybe split particles then draw all particles in current wave*/
         particleWave.maybeCreateNewParticles(lvlNumber);
+        particleWave.maybeSpitSomeParticles(lvlNumber);
         particleWave.integrateAll();
         particleWave.draw();
 
         /* Check for destroyed Cities */
         CollisionChecker collisionChecker = new CollisionChecker(game);
         collisionChecker.checkForParticleCityCollision();
+        collisionChecker.checkForParticleBomberCollision();
 
         /* Check for destroyed Particles */
         collisionChecker.checkForParticleExplosionCollision();
