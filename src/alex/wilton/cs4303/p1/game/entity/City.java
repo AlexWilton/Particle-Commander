@@ -14,6 +14,8 @@ public class City extends Entity{
     public final int x, y, width, height;
     private boolean destroyed = false;
 
+    private int currentExplosionRadius = (int) (60 * 0.5); //0.5 seconds (typically 60 frames a second)
+
     public City(int x, int y, int width, int height){
         this.x = x;
         this.y = y;
@@ -25,12 +27,31 @@ public class City extends Entity{
         if(!destroyed) {
             app.imageMode(App.CORNER);
             app.image(cityImg, x, y, width, height);
+        }else{
+            if(currentExplosionRadius > 0) drawExplosion();
+            currentExplosionRadius--;
         }
+    }
+
+    /**
+     * Draw Explosion, radius decreases based on frames left till end of explosion
+     */
+    private void drawExplosion() {
+        //alternate colour between red and yellow
+        if(currentExplosionRadius % 2 == 0)
+            app.fill(255,255,0);
+        else
+            app.fill(255,0,0);
+        app.strokeWeight(0);
+        app.ellipse(x + width/2, y + height/2, (float) (currentExplosionRadius * 1.5), (float) (currentExplosionRadius * 1.5));
+        app.fill(255); //reset colour to white
     }
 
     public void setDestroyed(boolean destroyed){
         this.destroyed = destroyed;
-        if(destroyed) Sound.playBigExplosion();
+        if(destroyed) {
+            Sound.playBigExplosion();
+        }
     }
 
     public boolean isDestroyed(){

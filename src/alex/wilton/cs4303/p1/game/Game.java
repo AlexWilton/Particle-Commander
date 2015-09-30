@@ -143,8 +143,6 @@ public class Game{
     }
 
 
-
-
     /* GETTERS */
     public Planet getPlanet(){
         return planet;

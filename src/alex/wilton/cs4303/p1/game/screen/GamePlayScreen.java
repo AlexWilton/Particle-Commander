@@ -1,5 +1,6 @@
 package alex.wilton.cs4303.p1.game.screen;
 
+import alex.wilton.cs4303.p1.game.App;
 import alex.wilton.cs4303.p1.game.CollisionChecker;
 import alex.wilton.cs4303.p1.game.Game;
 import alex.wilton.cs4303.p1.game.entity.collection.BomberWave;
@@ -31,14 +32,7 @@ public class GamePlayScreen extends Screen{
         app.drawBackgroundImage();
 
         /* Draw player/score info */
-        app.textAlign(app.LEFT);
-        app.noFill(); app.stroke(255); app.strokeWeight(2);
-        app.rect(5, 30, 150, 90);
-        app.textSize(20);
-        app.text("LEVEL: " + lvlNumber, 10, 50);
-        app.text("SCORE: " + score, 10, 80);
-        app.text("MISSILES: " + numberOfMissiles, 10, 110);
-        app.text("Time to next level: " + lvlTimeRemaining / 60, 300, 50);
+        drawPlayerScoreInfo();
 
         /* Draw all missiles in flight */
         missilesInMotion.integrateAll();
@@ -71,6 +65,18 @@ public class GamePlayScreen extends Screen{
         CrossHair crossHair = new CrossHair();
         crossHair.draw();
         app.noCursor();
+
+    }
+
+    private void drawPlayerScoreInfo() {
+        app.textAlign(App.LEFT);
+        app.noFill(); app.stroke(255); app.strokeWeight(2);
+        app.rect(5, 30, 150, 90);
+        app.textSize(20);
+        app.text("LEVEL: " + lvlNumber, 10, 50);
+        app.text("SCORE: " + score, 10, 80);
+        app.text("MISSILES: " + numberOfMissiles, 10, 110);
+        app.text("Time to next level: " + lvlTimeRemaining / 60, 300, 50);
 
     }
 

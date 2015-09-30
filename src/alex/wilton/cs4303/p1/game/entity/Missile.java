@@ -15,7 +15,7 @@ public class Missile extends Entity{
     private double distanceFromBaseToTarget;
 
     private boolean exploding = false;
-    private int currentExplosionRadius = (int) (60 * 1); //1.5 seconds (typically 60 frames a second)
+    private int currentExplosionRadius = (int) (60 * 1); //1 second (typically 60 frames a second)
 
     public Missile(MissileBase base, int targetX, int targetY) {
         this.targetX = targetX;
@@ -124,4 +124,5 @@ public class Missile extends Entity{
     public Vector getPosition() {
         return position;
     }
+
 }
