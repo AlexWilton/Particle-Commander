@@ -1,6 +1,7 @@
 package alex.wilton.cs4303.p1.game.entity;
 
 import alex.wilton.cs4303.p1.game.App;
+import alex.wilton.cs4303.p1.game.Sound;
 import processing.core.*;
 
 public class City extends Entity{
@@ -28,7 +29,7 @@ public class City extends Entity{
     }
 
     public void setDestroyed(boolean destroyed){
-       this.destroyed = destroyed;
+        this.destroyed = destroyed;
     }
 
     public boolean isDestroyed(){

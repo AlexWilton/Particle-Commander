@@ -107,6 +107,7 @@ public class Game{
         if(numberOfMissiles > 0) {
             missilesInMotion.addMissile(new Missile(planet.getMissileBase(), targetX, targetY));
             numberOfMissiles--;
+            Sound.playMissileLaunch();
         }
     }
 
@@ -118,6 +119,7 @@ public class Game{
     public void particleShootDown(Particle particle){
         particlesDestroyed++;
         particleWave.remove(particle);
+        Sound.playSmallExplosion();
     }
 
     /**

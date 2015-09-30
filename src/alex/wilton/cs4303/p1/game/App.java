@@ -24,6 +24,7 @@ public class App extends PApplet{
         planet = new Planet(4);
         game = new Game(planet);
         game.setupLvl();
+        Sound.playSmallExplosion();
     }
 
     public void drawBackgroundImage(){
