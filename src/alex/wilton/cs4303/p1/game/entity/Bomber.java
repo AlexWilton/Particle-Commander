@@ -86,7 +86,7 @@ public class Bomber extends Entity{
     }
 
     private Particle dropBomb() {
-        return new Particle((int) position.x, (int) position.y, 0, 0, 0, .1f);
+        return new Particle((int) position.x, (int) position.y, 0, 0, 0, .02f);
     }
 
     private boolean isOverCity() {

@@ -24,7 +24,7 @@ public class BomberWave {
     }
 
     public void maybeCreateBomber(Planet targetPlanet, int lvlNumber){
-        if(java.lang.Math.random() < 0.001 + 0.0005 * lvlNumber)
+        if(java.lang.Math.random() < 0.002 + 0.0001 * lvlNumber)
             bombers.add(Bomber.createBomber(targetPlanet, lvlNumber));
     }
 

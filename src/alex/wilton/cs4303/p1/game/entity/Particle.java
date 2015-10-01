@@ -54,7 +54,7 @@ public class Particle extends Entity{
      * @return The new particle (if split occurs), else null if no split occurs.
      */
     public Particle maybeSplit(int lvlNumber){
-        boolean split = java.lang.Math.random() < 0.0005 + 0.0003 * lvlNumber;
+        boolean split = java.lang.Math.random() < 0.0004 + 0.0002 * lvlNumber;
         if(split){
             //this particle moves left a bit
             PVector moveLeft = new PVector(-0.3f, velocity.y);

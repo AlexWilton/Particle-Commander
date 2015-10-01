@@ -25,7 +25,7 @@ public class ParticleWave{
      * @param lvlNumber Level Number
      */
     public void maybeCreateNewParticles(int lvlNumber){
-        boolean createNewParticle = rand() <  0.005 + 0.004 * lvlNumber;
+        boolean createNewParticle = rand() <  0.006 + 0.002 * lvlNumber;
         if(createNewParticle){
             /*START PARTICLE AT RANDOM POINT AT TOP OF SCREEN*/
             int posX = (int) (rand() * App.WINDOW_WIDTH);
@@ -38,7 +38,7 @@ public class ParticleWave{
 
             /*ACCELERATION TOWARDS THE PLANET IS ALWAYS CONSTANT*/
             float accelerationX = 0;
-            float accelerationY =0.03f;
+            float accelerationY =0.02f;
 
             particles.add(new Particle(posX, posY, velocityX, velocityY, accelerationX, accelerationY));
         }
