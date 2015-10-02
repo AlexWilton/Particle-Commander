@@ -8,33 +8,38 @@ import alex.wilton.cs4303.p1.game.entity.collection.MissileSet;
 import alex.wilton.cs4303.p1.game.entity.collection.ParticleWave;
 import alex.wilton.cs4303.p1.game.screen.*;
 
+/**
+ * Game Class contains the full state of the game.
+ * State includes player, planet, particles, missiles, bombers and stage/screen information
+ */
 public class Game{
-    private Screen screen;
-
     private Planet planet;
+
     private ParticleWave particleWave;
     private MissileSet missilesInMotion;
     private BomberWave bomberWave;
-
     private int lvlNumber = 1;
+
     private int score = 0;
     private int numberOfMissiles = 15;
     private int particlesDestroyed = 0;
-
+    /**
+     *  Time (in frames) till end of level.
+     */
     private int lvlTimeRemaining;
 
-    private final int STAGE_PREGAME = 0;
-    private final int STAGE_PLAY = 1;
-    private final int STAGE_LEVELEND = 2;
-    private final int STAGE_GAMEOVER = 3;
-    private final int STAGE_SHOP = 4;
-    private int gameStage = STAGE_PREGAME;
+    enum Stage {PREGAME, PLAY, LEVELEND, GAMEOVER, SHOP;}
+    private Stage gameStage = Stage.PREGAME; //stage is used to determine which screen to show
+    private Screen screen;
 
     public Game(Planet planet){
         this.planet = planet;
         setupLvl();
     }
 
+    /**
+     * Reset game components. Makes game ready to start a new level
+     */
     public void setupLvl(){
         particleWave = new ParticleWave();
         missilesInMotion = new MissileSet();
@@ -43,38 +48,48 @@ public class Game{
         lvlTimeRemaining = (10 + lvlNumber * 5) * 60;
     }
 
+    /**
+     * Draw the correct screen. Game Stage is used to determine which screen to show
+     */
     public void draw(){
         switch(gameStage){
             default:
-            case STAGE_PREGAME:
+            case PREGAME:
                 screen = new PreGameScreen(this);
                 break;
-            case STAGE_LEVELEND:
+            case LEVELEND:
                 screen = new EndOfLvlScreen(this);
                 break;
-            case STAGE_GAMEOVER:
+            case GAMEOVER:
                 screen = new GameOverScreen(this);
                 break;
-            case STAGE_SHOP:
+            case SHOP:
                 screen = new ShopScreen(this);
                 break;
-            case STAGE_PLAY:
-                lvlTimeRemaining--;
-                if(lvlTimeRemaining == 0) gameStage = STAGE_LEVELEND;
+            case PLAY:
                 screen = new GamePlayScreen(this);
+                lvlTimeRemaining--; //decrement game timer
+                if(lvlTimeRemaining == 0) gameStage = Stage.LEVELEND;
                 break;
         }
         screen.draw();
     }
 
+    /**
+     * Use screen specific mouse pressed handler.
+     */
     public void mousePressed(){
         screen.mousePressed();
     }
 
-
+    /**
+     * Use cities remaining, missiles remaining and particles destroyed to determine subtotal
+     * @return subtotal
+     */
     public int calculateSubTotal(){
         return planet.citiesRemaining() * 50 + numberOfMissiles * 2 + particlesDestroyed * 5;
     }
+
 
 
     /* GAME TRANSITIONS (to a new stage) */
@@ -85,19 +100,17 @@ public class Game{
         score += calculateSubTotal();
         lvlNumber++;
         setupLvl();
-        gameStage = STAGE_SHOP;
+        gameStage = Stage.SHOP;
     }
-    public void startLevel(){
-        gameStage = STAGE_PLAY;
-    }
+    public void startLevel(){gameStage = Stage.PLAY;}
     public void gameOver() {
-        gameStage = STAGE_GAMEOVER;
+        gameStage = Stage.GAMEOVER;
     }
+
 
 
 
     /* GAME ACTIONS*/
-
     /**
      * If missile available, fire missile at target co-ordinates
      * @param targetX Target X Co-ordinate
@@ -107,7 +120,7 @@ public class Game{
         if(numberOfMissiles > 0) {
             missilesInMotion.addMissile(new Missile(planet.getMissileBase(), targetX, targetY));
             numberOfMissiles--;
-            Sound.playMissileLaunch();
+            SoundEffects.playMissileLaunch();
         }
     }
 
@@ -119,7 +132,7 @@ public class Game{
     public void particleShootDown(Particle particle){
         particlesDestroyed++;
         particleWave.remove(particle);
-        Sound.playSmallExplosion();
+        SoundEffects.playSmallExplosion();
     }
 
     /**
@@ -143,7 +156,7 @@ public class Game{
     }
 
 
-    /* GETTERS */
+
     public Planet getPlanet(){
         return planet;
     }

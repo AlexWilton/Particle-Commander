@@ -3,16 +3,13 @@ package alex.wilton.cs4303.p1.game.entity;
 import alex.wilton.cs4303.p1.game.App;
 import processing.core.PImage;
 
+/**
+ * Class for representing and drawing the CrossHair
+ */
 public class CrossHair extends Entity{
-    private static PImage crossHairImg = null;
-    private static final String CROSSHAIR_IMAGE_FILEPATH = "images/crosshair.gif";
+    private static PImage crossHairImg = App.app.loadImage("images/crosshair.gif");
 
-    public CrossHair(){
-        super();
-        if(crossHairImg == null){
-            crossHairImg = app.loadImage(CROSSHAIR_IMAGE_FILEPATH);
-        }
-    }
+    public CrossHair(){super();}
 
     @Override
     public void draw() {

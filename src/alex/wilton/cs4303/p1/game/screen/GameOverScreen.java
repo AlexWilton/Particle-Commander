@@ -3,6 +3,9 @@ package alex.wilton.cs4303.p1.game.screen;
 import alex.wilton.cs4303.p1.game.App;
 import alex.wilton.cs4303.p1.game.Game;
 
+/**
+ * Class for displaying Game Over screen
+ */
 public class GameOverScreen extends Screen{
 
     int citiesRemaining, numberOfMissiles, particlesDestroyed, lvlNumber, score;

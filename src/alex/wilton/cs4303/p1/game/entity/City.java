@@ -1,20 +1,19 @@
 package alex.wilton.cs4303.p1.game.entity;
 
 import alex.wilton.cs4303.p1.game.App;
-import alex.wilton.cs4303.p1.game.Sound;
+import alex.wilton.cs4303.p1.game.SoundEffects;
 import processing.core.*;
 
+/**
+ * Class for modelling and drawing a City
+ */
 public class City extends Entity{
-    private static PImage cityImg;
-    private static final String CITY_IMAGE_FILEPATH = "images/city.gif";
-    static{
-        cityImg = App.app.loadImage(CITY_IMAGE_FILEPATH);
-    }
+    private static PImage cityImg = App.app.loadImage("images/city.gif");
 
     public final int x, y, width, height;
     private boolean destroyed = false;
 
-    private int currentExplosionRadius = (int) (60 * 0.5); //0.5 seconds (typically 60 frames a second)
+    private int numberOfExplodingFrameRemaining = (int) (60 * 0.5); //0.5 seconds (typically 60 frames a second)
 
     public City(int x, int y, int width, int height){
         this.x = x;
@@ -23,14 +22,19 @@ public class City extends Entity{
         this.height = height;
     }
 
+    /**
+     * Draw City if city isn't destroyed.
+     * If city is exploding, draw explosion
+     */
     public void draw(){
         if(!destroyed) {
             app.imageMode(App.CORNER);
             app.image(cityImg, x, y, width, height);
-        }else{
-            if(currentExplosionRadius > 0) drawExplosion();
-            currentExplosionRadius--;
+        }else if(numberOfExplodingFrameRemaining > 0) {
+            drawExplosion();
+            numberOfExplodingFrameRemaining--;
         }
+
     }
 
     /**
@@ -38,31 +42,37 @@ public class City extends Entity{
      */
     private void drawExplosion() {
         //alternate colour between red and yellow
-        if(currentExplosionRadius % 2 == 0)
+        if(numberOfExplodingFrameRemaining % 2 == 0)
             app.fill(255,255,0);
         else
             app.fill(255,0,0);
         app.strokeWeight(0);
-        app.ellipse(x + width/2, y + height/2, (float) (currentExplosionRadius * 1.5), (float) (currentExplosionRadius * 1.5));
+        app.ellipse(x + width/2, y + height/2, (float) (numberOfExplodingFrameRemaining * 1.5), (float) (numberOfExplodingFrameRemaining * 1.5));
         app.fill(255); //reset colour to white
     }
 
     public void setDestroyed(boolean destroyed){
         this.destroyed = destroyed;
         if(destroyed) {
-            Sound.playBigExplosion();
+            SoundEffects.playBigExplosion();
         }
     }
 
     public boolean isDestroyed(){
-      return destroyed; 
+        return destroyed;
     }
 
     public boolean containsPoint(int pointX, int pointY) {
-        if( x <= pointX && pointX <= x + width && y <= pointY && pointY <= y + height)
-            return true;
-        return false;
+        //check x co-ordinate
+        if(!(x <= pointX && pointX <= x + width)) return false;
+
+        //check y co-ordinate
+        if(!(y <= pointY && pointY <= y + height)) return false;
+
+        return true;
     }
 
-
+    public boolean getDestroyed() {
+        return destroyed;
+    }
 }

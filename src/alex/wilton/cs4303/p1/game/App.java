@@ -3,34 +3,30 @@ package alex.wilton.cs4303.p1.game;
 import alex.wilton.cs4303.p1.game.entity.Planet;
 import processing.core.*;
 
+/**
+ * App class represents the Application as a whole.
+ * New Game is created and the frame draw and
+ * mouse pressed handlers specified.
+ */
 public class App extends PApplet{
+    /**
+     * app object is made globally accessible in order that specific screens can load images into the app
+     */
     public static App app;
+    public static final int WINDOW_WIDTH = 650, WINDOW_HEIGHT = 700;
 
     public App(){
         app = this;
     }
 
-    public static final int WINDOW_WIDTH = 650, WINDOW_HEIGHT = 700;
-
-    private static PImage backImg = null;
-    private static final String BACKGROUND_IMAGE_FILEPATH = "images/background.jpg";
-
-    private Planet planet;
     private Game game;
 
     public void setup() {
-        backImg = loadImage(BACKGROUND_IMAGE_FILEPATH);
         size(WINDOW_WIDTH, WINDOW_HEIGHT);
-        planet = new Planet(4);
+        Planet planet = new Planet(4);
         game = new Game(planet);
-        game.setupLvl();
-        Sound.playSmallExplosion();
     }
 
-    public void drawBackgroundImage(){
-        imageMode(CORNER);
-        image(backImg, 0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
-    }
 
     public void draw() {
         game.draw();

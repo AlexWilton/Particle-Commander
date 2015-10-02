@@ -8,13 +8,19 @@ import alex.wilton.cs4303.p1.game.entity.collection.MissileSet;
 import alex.wilton.cs4303.p1.game.entity.collection.ParticleWave;
 import alex.wilton.cs4303.p1.game.entity.CrossHair;
 import alex.wilton.cs4303.p1.game.entity.Planet;
+import processing.core.PImage;
 
+/**
+ * Class for displaying Game Play Screen
+ */
 public class GamePlayScreen extends Screen{
     private ParticleWave particleWave;
     private MissileSet missilesInMotion;
     private BomberWave bomberWave;
     private Planet planet;
     private int lvlNumber, score, numberOfMissiles, lvlTimeRemaining;
+
+    private static PImage backgroundImage = App.app.loadImage("images/background.jpg");
 
     public GamePlayScreen(Game game){
         super(game);
@@ -29,7 +35,7 @@ public class GamePlayScreen extends Screen{
     }
 
     public void draw(){
-        app.drawBackgroundImage();
+        drawBackgroundImage();
 
         /* Draw player/score info */
         drawPlayerScoreInfo();
@@ -52,7 +58,7 @@ public class GamePlayScreen extends Screen{
         /* Check for destroyed Cities */
         CollisionChecker collisionChecker = new CollisionChecker(game);
         collisionChecker.checkForParticleCityCollision();
-        collisionChecker.checkForParticleBomberCollision();
+        collisionChecker.checkForBombersHitByMissileExplosion();
 
         /* Check for destroyed Particles */
         collisionChecker.checkForParticleExplosionCollision();
@@ -66,6 +72,11 @@ public class GamePlayScreen extends Screen{
         crossHair.draw();
         app.noCursor();
 
+    }
+
+    public void drawBackgroundImage(){
+        app.imageMode(App.CORNER);
+        app.image(backgroundImage, 0, 0, App.WINDOW_WIDTH, App.WINDOW_HEIGHT);
     }
 
     private void drawPlayerScoreInfo() {

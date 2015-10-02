@@ -3,6 +3,9 @@ package alex.wilton.cs4303.p1.game.screen;
 import alex.wilton.cs4303.p1.game.App;
 import alex.wilton.cs4303.p1.game.Game;
 
+/**
+ * Class for displaying End of Level Screen
+ */
 public class EndOfLvlScreen extends Screen{
     int citiesRemaining, numberOfMissiles, particlesDestroyed, lvlNumber, score;
 

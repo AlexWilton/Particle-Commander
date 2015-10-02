@@ -2,15 +2,20 @@ package alex.wilton.cs4303.p1.game;
 
 import ddf.minim.*;
 
-
-public class Sound {
+/**
+ * Simple class providing statically accessible methods for playing useful sounds
+ */
+public class SoundEffects {
     private static Minim minim;
     private static AudioPlayer smallExplosion;
     private static AudioPlayer bigExplosion;
     private static AudioPlayer missileLaunch;
 
+    /**
+     * Play a small explosion sound effect
+     */
     public static void playSmallExplosion(){
-        if(bigExplosion == null) {
+        if(smallExplosion == null) {
             if (minim == null) {
                 minim = new Minim(App.app);
             }
@@ -20,6 +25,10 @@ public class Sound {
         smallExplosion.rewind();
     }
 
+
+    /**
+     * Play a big explosion sound effect
+     */
     public static void playBigExplosion(){
         if(bigExplosion == null) {
             if (minim == null) {
@@ -31,6 +40,10 @@ public class Sound {
         bigExplosion.rewind();
     }
 
+
+    /**
+     * Play a missile launch sound effect
+     */
     public static void playMissileLaunch() {
         if(missileLaunch == null) {
             if (minim == null) {

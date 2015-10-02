@@ -4,18 +4,15 @@ import alex.wilton.cs4303.p1.game.App;
 import alex.wilton.cs4303.p1.game.Game;
 import processing.core.PImage;
 
+/**
+ * Class for displaying Pre Game Start Screen
+ */
 public class PreGameScreen extends Screen{
-    private static PImage missileLauncherImg;
-    private static final String MISSILE_LAUNCHER_IMAGE_FILEPATH = "images/missileLauncher.jpg";
-    static{
-        missileLauncherImg = App.app.loadImage(MISSILE_LAUNCHER_IMAGE_FILEPATH);
-    }
-
+    private static PImage missileLauncherImg = App.app.loadImage("images/missileLauncher.jpg");;
 
     public PreGameScreen(Game game){
         super(game);
     }
-
 
     public void draw(){
         app.cursor(); //enable default cursor

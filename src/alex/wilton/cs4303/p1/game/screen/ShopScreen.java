@@ -3,6 +3,9 @@ package alex.wilton.cs4303.p1.game.screen;
 import alex.wilton.cs4303.p1.game.App;
 import alex.wilton.cs4303.p1.game.Game;
 
+/**
+ * Class for displaying Shop Screen
+ */
 public class ShopScreen extends Screen{
     int numberOfCities, numberOfMissles, nextLevelNumber, score;
 

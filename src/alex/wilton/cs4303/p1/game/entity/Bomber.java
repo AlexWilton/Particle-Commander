@@ -5,21 +5,17 @@ import alex.wilton.cs4303.p1.game.Vector;
 import processing.core.PImage;
 
 /**
- * A Bomber flies across the screen and drops particles when over one city
- *
+ * Class to model and draw a Bomber.
+ * A Bomber flies across the screen and drops particles when over one city.
  */
 public class Bomber extends Entity{
     private int height = 20, width = 30;
-    private static PImage bomberImg;
-    private static final String BOMBER_IMAGE_FILEPATH = "images/spaceship.png";
-    static{
-        bomberImg = App.app.loadImage(BOMBER_IMAGE_FILEPATH);
-    }
+    private static PImage bomberImg = App.app.loadImage("images/spaceship.png");
 
-
+    /* bomber must fly at least 200 away from the bottom of the screen */
     private static final int MAX_ALLOWED_HEIGHT = App.WINDOW_HEIGHT - 200;
 
-    private boolean bombDropped = false;
+    private boolean bombDropped = false; //each bomber has one bomb to drop
     private boolean active = true;
 
     private Planet targetPlanet;
@@ -85,10 +81,18 @@ public class Bomber extends Entity{
         }
     }
 
+    /**
+     * Create a particle which will act as a bomb dropped by the bomber
+     * @return Particle (which will act as a bomb)
+     */
     private Particle dropBomb() {
         return new Particle((int) position.x, (int) position.y, 0, 0, 0, .02f);
     }
 
+    /**
+     * Check if bomber is currently directly above an alive city
+     * @return boolean
+     */
     private boolean isOverCity() {
         int fudgeFactor = 15;
         for(City c : targetPlanet.getCities()){
@@ -98,27 +102,12 @@ public class Bomber extends Entity{
         return false;
     }
 
-    public boolean isActive() {
-        return active;
-    }
 
-    public void setActive(boolean active) {
-        this.active = active;
-    }
+    public boolean isActive() {return active;}
 
-    public boolean containsPoint(double x, double y) {
-        //check x
-        if(!(position.x - width /2 < x && x < position.x + width/2))
-            return false;
+    public void setActive(boolean active) {this.active = active;}
 
-        //check y
-        if(!(position.y - height/2  < y && y < position.y + height))
-            return false;
+    public Vector getPosition() {return position;}
 
-        return true;
-    }
-
-    public Vector getPosition() {
-        return position;
-    }
+    public boolean getActive() {return active;}
 }

@@ -2,6 +2,9 @@ package alex.wilton.cs4303.p1.game.entity;
 
 import java.lang.Math;
 
+/**
+ * Class for modelling and drawing a Missile Base
+ */
 public class MissileBase extends Entity {
     private int x, y, width, height;
     public MissileBase(int x, int y, int width, int height){

@@ -2,6 +2,9 @@ package alex.wilton.cs4303.p1.game.entity;
 
 import alex.wilton.cs4303.p1.game.App;
 
+/**
+ * Class for modelling and drawing a Planet.
+ */
 public class Planet extends Entity{
     private int numberOfCities;
     private City[] cities;

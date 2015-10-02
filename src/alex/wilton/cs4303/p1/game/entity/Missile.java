@@ -3,20 +3,28 @@ package alex.wilton.cs4303.p1.game.entity;
 import alex.wilton.cs4303.p1.game.Vector;
 import processing.core.PVector;
 
+/**
+ * Class for modelling and drawing a Missile (and its explosion when it reaches its target)
+ */
 public class Missile extends Entity{
     public static final int SPEED = 15;
 
     private Vector position;
     private Vector velocity;
 
-
     private int startX, startY,  targetX, targetY;
     private double angleFromBaseToTarget;
     private double distanceFromBaseToTarget;
 
     private boolean exploding = false;
-    private int currentExplosionRadius = (int) (60 * 1); //1 second (typically 60 frames a second)
+    private int currentExplosionRadius = 60; //1 second (typically 60 frames a second)
 
+    /**
+     * Missile Constructor
+     * @param base Origin Missile Base
+     * @param targetX Target X Co-ordinate
+     * @param targetY Target Y Co-ordinate
+     */
     public Missile(MissileBase base, int targetX, int targetY) {
         this.targetX = targetX;
         this.targetY = targetY;
@@ -98,10 +106,22 @@ public class Missile extends Entity{
         return distanceTravelled() > distanceFromBaseToTarget;
     }
 
+    /**
+     * Caluclate distance the missile has travelled
+     * @return Distance
+     */
     public double distanceTravelled(){
         return distance(startX, startY, position.x, position.y);
     }
 
+    /**
+     * Calculate the distance between two points
+     * @param x1 Point 1 x co-ordinate
+     * @param y1 Point 1 u co-ordinate
+     * @param x2 Point 2 x co-ordinate
+     * @param y2 Point 2 y co-ordinate
+     * @return Distance between the two points
+     */
     private static double distance(int x1, int y1, double x2, double y2){
         return Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
     }
