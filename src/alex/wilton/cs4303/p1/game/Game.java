@@ -28,7 +28,7 @@ public class Game{
      */
     private int lvlTimeRemaining;
 
-    enum Stage {PREGAME, PLAY, LEVELEND, GAMEOVER, SHOP;}
+    enum Stage {PREGAME, PLAY, LEVELEND, GAMEOVER, SHOP}
     private Stage gameStage = Stage.PREGAME; //stage is used to determine which screen to show
     private Screen screen;
 
