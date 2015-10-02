@@ -4,7 +4,9 @@ import alex.wilton.cs4303.p1.game.entity.Missile;
 
 import java.util.HashSet;
 
-
+/**
+ * Class to represent a set of Missiles for a given level
+ */
 public class MissileSet {
     private HashSet<Missile> missiles = new HashSet<>();
     /**

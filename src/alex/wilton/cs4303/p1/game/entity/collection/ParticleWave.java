@@ -6,6 +6,9 @@ import alex.wilton.cs4303.p1.game.entity.Particle;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Class to represent a wave for particles for a given level
+ */
 public class ParticleWave{
     private HashSet<Particle> particles = new HashSet<>();
 

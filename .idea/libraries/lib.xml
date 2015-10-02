@@ -5,7 +5,7 @@
       <root url="file://$PROJECT_DIR$/lib/minim" />
     </CLASSES>
     <JAVADOC>
-      <root url="file://$PROJECT_DIR$/lib/javadoc/everything" />
+      <root url="file://$PROJECT_DIR$/lib/processingJavadoc/everything" />
     </JAVADOC>
     <SOURCES />
     <jarDirectory url="file://$PROJECT_DIR$/lib/minim" recursive="false" />
