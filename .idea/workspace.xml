@@ -6,27 +6,77 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f30673d-14c5-46f7-8eaf-097976ee67f1" name="Default" comment="splitting particles added.&#10;bombers added.&#10;src files for processing sound added.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ParticleCommander.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/ParticleCommander_jar.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/Game.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/entity/City.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/entity/Entity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/entity/Particle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/entity/Planet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/game/screen/EndOfLvlScreen.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ParticleCommander/alex/wilton/cs4303/p1/main/Main.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/Game.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/GameModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/App.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/CollisionChecker.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/CollisionChecker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/EndOfLvlScreen.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/EndOfLvlScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/GameOverScreen.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/GameOverScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/GamePlayScreen.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/GamePlayScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Particle.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/entity/Particle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/PreGameScreen.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/PreGameScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/Screen.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/Screen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/ShopScreen.java" afterPath="$PROJECT_DIR$/src/alex/wilton/cs4303/p1/game/screen/ShopScreen.java" />
+    <list default="true" id="2f30673d-14c5-46f7-8eaf-097976ee67f1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/App.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/entity/Bomber.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/entity/collection/BomberWave.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/entity/City.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/CollisionChecker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/entity/CrossHair.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/screen/EndOfLvlScreen.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/entity/Entity.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/Game.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/GameModel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/screen/GameOverScreen.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/screen/GamePlayScreen.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/main/Main.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/entity/Missile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/entity/MissileBase.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/entity/collection/MissileSet.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/entity/Particle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/entity/collection/ParticleWave.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/entity/Planet.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/screen/PreGameScreen.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/screen/Screen.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/screen/ShopScreen.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/SoundEffects.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/Vector.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/allclasses-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/allclasses-noframe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/constant-values.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/deprecated-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/help-doc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-10.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-11.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-12.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-13.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-14.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-15.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-16.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-17.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-7.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-8.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-files/index-9.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/overview-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/overview-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/overview-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/entity/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/entity/collection/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/screen/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/main/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/package-list" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/entity/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/entity/collection/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/screen/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/main/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/entity/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/entity/collection/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/game/screen/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/alex/wilton/cs4303/p1/main/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/serialized-form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/stylesheet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ParticleCommander.iws" />
@@ -239,7 +289,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -636,7 +686,7 @@
       <workItem from="1443616155699" duration="17687000" />
       <workItem from="1443777639516" duration="1090000" />
       <workItem from="1443778757353" duration="5370000" />
-      <workItem from="1443785614029" duration="13053000" />
+      <workItem from="1443785614029" duration="13432000" />
     </task>
     <task id="LOCAL-00001" summary="cities can now be destroyed">
       <created>1443199942094</created>
@@ -710,11 +760,17 @@
       <option name="project" value="LOCAL" />
       <updated>1443789097409</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="final">
+      <created>1443808427390</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1443808427390</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69763000" />
+    <option name="totallyTimeSpent" value="70142000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="0" width="1922" height="1081" extended-state="6" />
@@ -773,7 +829,8 @@
     <MESSAGE value="Lots of javadocing and refractoring" />
     <MESSAGE value="javadoc improved" />
     <MESSAGE value="removed semicolon" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed semicolon" />
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
