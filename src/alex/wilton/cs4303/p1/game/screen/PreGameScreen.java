@@ -1,7 +1,7 @@
 package alex.wilton.cs4303.p1.game.screen;
 
 import alex.wilton.cs4303.p1.game.App;
-import alex.wilton.cs4303.p1.game.Game;
+import alex.wilton.cs4303.p1.game.GameModel;
 import processing.core.PImage;
 
 /**
@@ -10,8 +10,8 @@ import processing.core.PImage;
 public class PreGameScreen extends Screen{
     private static PImage missileLauncherImg = App.app.loadImage("images/missileLauncher.jpg");;
 
-    public PreGameScreen(Game game){
-        super(game);
+    public PreGameScreen(GameModel gameModel){
+        super(gameModel);
     }
 
     public void draw(){
@@ -52,7 +52,7 @@ public class PreGameScreen extends Screen{
     public void mousePressed(){
         /*Listener for START LEVEL button*/
         if( 230 <= app.mouseX && app.mouseX <= 230 + 180 && 500 <= app.mouseY && app.mouseY <= 500 + 50){
-            game.startLevel();
+            gameModel.startLevel();
         }
     }
 

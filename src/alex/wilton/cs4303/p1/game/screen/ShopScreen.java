@@ -1,7 +1,7 @@
 package alex.wilton.cs4303.p1.game.screen;
 
 import alex.wilton.cs4303.p1.game.App;
-import alex.wilton.cs4303.p1.game.Game;
+import alex.wilton.cs4303.p1.game.GameModel;
 
 /**
  * Class for displaying Shop Screen
@@ -9,12 +9,12 @@ import alex.wilton.cs4303.p1.game.Game;
 public class ShopScreen extends Screen{
     int numberOfCities, numberOfMissles, nextLevelNumber, score;
 
-    public ShopScreen(Game game){
-        super(game);
-        numberOfCities = game.getPlanet().citiesRemaining();
-        numberOfMissles = game.getNumberOfMissiles();
-        nextLevelNumber = game.getLvlNumber();
-        score = game.getScore();
+    public ShopScreen(GameModel gameModel){
+        super(gameModel);
+        numberOfCities = gameModel.getPlanet().citiesRemaining();
+        numberOfMissles = gameModel.getNumberOfMissiles();
+        nextLevelNumber = gameModel.getLvlNumber();
+        score = gameModel.getScore();
     }
 
 
@@ -49,7 +49,7 @@ public class ShopScreen extends Screen{
 
         /*BUY MISSILES BUTTON*/
         app.fill(0, 0, 100);
-        app.rect(350, 320, 190, 80, 15);
+        app.rect(350, 320, 205, 80, 15);
         app.fill(255);
         app.textAlign(app.LEFT);
         app.text("MISSILES (x10)", 360, 352);
@@ -71,17 +71,17 @@ public class ShopScreen extends Screen{
     public void mousePressed(){
         /*Listener for BUY CITY*/
         if( 110 <= app.mouseX && app.mouseX <= 110 + 190 && 320 <= app.mouseY && app.mouseY <= 320 + 80){
-            game.attemptToBuyCity();
+            gameModel.attemptToBuyCity();
         }
 
         /*Listener for BUY MISSILLES*/
         if( 350 <= app.mouseX && app.mouseX <= 350 + 190 && 320 <= app.mouseY && app.mouseY <= 320 + 80){
-            game.attemptToBuyMissiles();
+            gameModel.attemptToBuyMissiles();
         }
 
         /*Listener for START LEVEL button*/
         if( 230 <= app.mouseX && app.mouseX <= 230 + 180 && 500 <= app.mouseY && app.mouseY <= 500 + 50){
-            game.startLevel();
+            gameModel.startLevel();
         }
     }
 

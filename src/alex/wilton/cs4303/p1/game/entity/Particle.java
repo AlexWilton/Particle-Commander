@@ -7,7 +7,7 @@ public class Particle extends Entity{
     private boolean active = true;
     private PVector position, velocity, acceleration;
 
-    private static final float DAMPENING = .99f; // Simulate drag by using an damping factor
+    private static final float DAMPING = .99f; // Simulate drag by using an damping factor
 
     public Particle(PVector position, PVector velocity, PVector acceleration){
         this.position = position;
@@ -30,8 +30,8 @@ public class Particle extends Entity{
         position.add(velocity);
         velocity.add(acceleration);
 
-        /* Apply dampening to simulating drag */
-        acceleration.mult(DAMPENING);
+        /* Apply damping to simulating drag */
+        acceleration.mult(DAMPING);
 
         /* Mark Particle as dead if they stray more than half a screen from the view */
         if ((position.x < -App.WINDOW_WIDTH /2) || (position.x > App.WINDOW_WIDTH * 1.5 )) active = false;

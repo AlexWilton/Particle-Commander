@@ -12,7 +12,7 @@ import alex.wilton.cs4303.p1.game.screen.*;
  * Game Class contains the full state of the game.
  * State includes player, planet, particles, missiles, bombers and stage/screen information
  */
-public class Game{
+public class GameModel {
     private Planet planet;
 
     private ParticleWave particleWave;
@@ -32,7 +32,7 @@ public class Game{
     private Stage gameStage = Stage.PREGAME; //stage is used to determine which screen to show
     private Screen screen;
 
-    public Game(Planet planet){
+    public GameModel(Planet planet){
         this.planet = planet;
         setupLvl();
     }
@@ -129,7 +129,7 @@ public class Game{
      * Increase particle destroyed count and destroy particle
      * @param particle Particle shot down
      */
-    public void particleShootDown(Particle particle){
+    public void particleShotDown(Particle particle){
         particlesDestroyed++;
         particleWave.remove(particle);
         SoundEffects.playSmallExplosion();

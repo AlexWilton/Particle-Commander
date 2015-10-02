@@ -1,18 +1,18 @@
 package alex.wilton.cs4303.p1.game.screen;
 
 import alex.wilton.cs4303.p1.game.App;
-import alex.wilton.cs4303.p1.game.Game;
+import alex.wilton.cs4303.p1.game.GameModel;
 
 /**
  * Screen.
  * Show information to player and wait for input (Mouse click)
  */
 public abstract class Screen{
-    protected Game game;
+    protected GameModel gameModel;
     protected App app = App.app;
 
-    public Screen(Game game){
-        this.game = game;
+    public Screen(GameModel gameModel){
+        this.gameModel = gameModel;
     }
 
     /**

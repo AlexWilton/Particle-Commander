@@ -17,14 +17,14 @@ public class CollisionChecker {
     /**
      * Game to be checked
      */
-    private Game game;
+    private GameModel gameModel;
 
     /**
      * Collision Checker
-     * @param game Game which will be checked
+     * @param gameModel Game which will be checked
      */
-    public CollisionChecker(Game game) {
-        this.game = game;
+    public CollisionChecker(GameModel gameModel) {
+        this.gameModel = gameModel;
     }
 
     /**
@@ -32,8 +32,8 @@ public class CollisionChecker {
      * mark the city as destroyed and check for game over.
      */
     public void checkForParticleCityCollision(){
-        Set<Particle> particles = game.getParticleWave().getParticles();
-        City[] cities = game.getPlanet().getCities();
+        Set<Particle> particles = gameModel.getParticleWave().getParticles();
+        City[] cities = gameModel.getPlanet().getCities();
         for(Particle particle : particles){
             for(City city : cities){
                 if(city.getDestroyed()) continue; //only check alive cities
@@ -49,13 +49,13 @@ public class CollisionChecker {
 
 
     /**
-     * Check for Bombers which have been hit my missile explosion.
+     * Check for Bombers which have been hit by missile explosion.
      * Center of bomber needs to be in the explosion for bomber to
      * be destroyed. If destroyed, play big explosion sound effect.
      */
     public void checkForBombersHitByMissileExplosion(){
-        Set<Missile> missiles = game.getMissilesInMotion().getMissles();
-        Set<Bomber> bombers = game.getBomberWave().getBombers();
+        Set<Missile> missiles = gameModel.getMissilesInMotion().getMissles();
+        Set<Bomber> bombers = gameModel.getBomberWave().getBombers();
         for(Bomber bomber : bombers){
             if(!bomber.getActive()) continue; //only check active bombers
             for(Missile missile : missiles) {
@@ -74,8 +74,8 @@ public class CollisionChecker {
      */
     public void checkForParticleExplosionCollision(){
         Set<Particle> particlesShotDown = new HashSet<>();
-        Set<Particle> particles = game.getParticleWave().getParticles();
-        Set<Missile> missiles = game.getMissilesInMotion().getMissles();
+        Set<Particle> particles = gameModel.getParticleWave().getParticles();
+        Set<Missile> missiles = gameModel.getMissilesInMotion().getMissles();
         for(Particle particle : particles){
             for(Missile missile : missiles){
                 PVector position = particle.getPosition();
@@ -86,15 +86,15 @@ public class CollisionChecker {
                 }
             }
         }
-        for(Particle p : particlesShotDown) game.particleShootDown(p);
+        for(Particle p : particlesShotDown) gameModel.particleShotDown(p);
     }
 
     /**
      * If game is over (no cities remaining), move to game over screen
      */
     public void checkForGameOver() {
-       if(game.getPlanet().citiesRemaining() ==0){
-           game.gameOver();
+       if(gameModel.getPlanet().citiesRemaining() ==0){
+           gameModel.gameOver();
        }
     }
 }

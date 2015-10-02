@@ -2,7 +2,7 @@ package alex.wilton.cs4303.p1.game.screen;
 
 import alex.wilton.cs4303.p1.game.App;
 import alex.wilton.cs4303.p1.game.CollisionChecker;
-import alex.wilton.cs4303.p1.game.Game;
+import alex.wilton.cs4303.p1.game.GameModel;
 import alex.wilton.cs4303.p1.game.entity.collection.BomberWave;
 import alex.wilton.cs4303.p1.game.entity.collection.MissileSet;
 import alex.wilton.cs4303.p1.game.entity.collection.ParticleWave;
@@ -22,16 +22,16 @@ public class GamePlayScreen extends Screen{
 
     private static PImage backgroundImage = App.app.loadImage("images/background.jpg");
 
-    public GamePlayScreen(Game game){
-        super(game);
-        particleWave = game.getParticleWave();
-        missilesInMotion = game.getMissilesInMotion();
-        bomberWave = game.getBomberWave();
-        planet = game.getPlanet();
-        lvlNumber = game.getLvlNumber();
-        score = game.getScore();
-        numberOfMissiles = game.getNumberOfMissiles();
-        lvlTimeRemaining = game.getLvlTimeRemaining();
+    public GamePlayScreen(GameModel gameModel){
+        super(gameModel);
+        particleWave = gameModel.getParticleWave();
+        missilesInMotion = gameModel.getMissilesInMotion();
+        bomberWave = gameModel.getBomberWave();
+        planet = gameModel.getPlanet();
+        lvlNumber = gameModel.getLvlNumber();
+        score = gameModel.getScore();
+        numberOfMissiles = gameModel.getNumberOfMissiles();
+        lvlTimeRemaining = gameModel.getLvlTimeRemaining();
     }
 
     public void draw(){
@@ -56,7 +56,7 @@ public class GamePlayScreen extends Screen{
         particleWave.draw();
 
         /* Check for destroyed Cities */
-        CollisionChecker collisionChecker = new CollisionChecker(game);
+        CollisionChecker collisionChecker = new CollisionChecker(gameModel);
         collisionChecker.checkForParticleCityCollision();
         collisionChecker.checkForBombersHitByMissileExplosion();
 
@@ -92,7 +92,7 @@ public class GamePlayScreen extends Screen{
     }
 
     public void mousePressed(){
-        game.fireMissileAt(app.mouseX, app.mouseY);
+        gameModel.fireMissileAt(app.mouseX, app.mouseY);
     }
 
 

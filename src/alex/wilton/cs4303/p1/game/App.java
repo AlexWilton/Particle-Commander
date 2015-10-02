@@ -19,21 +19,22 @@ public class App extends PApplet{
         app = this;
     }
 
-    private Game game;
+    private GameModel gameModel;
 
     public void setup() {
         size(WINDOW_WIDTH, WINDOW_HEIGHT);
-        Planet planet = new Planet(4);
-        game = new Game(planet);
+        int numberOfCities = 4;
+        Planet planet = new Planet(numberOfCities);
+        gameModel = new GameModel(planet);
     }
 
 
     public void draw() {
-        game.draw();
+        gameModel.draw();
     }
 
     public void mousePressed() {
-        game.mousePressed();
+        gameModel.mousePressed();
     }
 
 

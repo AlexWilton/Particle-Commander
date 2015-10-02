@@ -1,7 +1,7 @@
 package alex.wilton.cs4303.p1.game.screen;
 
 import alex.wilton.cs4303.p1.game.App;
-import alex.wilton.cs4303.p1.game.Game;
+import alex.wilton.cs4303.p1.game.GameModel;
 
 /**
  * Class for displaying Game Over screen
@@ -10,13 +10,13 @@ public class GameOverScreen extends Screen{
 
     int citiesRemaining, numberOfMissiles, particlesDestroyed, lvlNumber, score;
 
-    public GameOverScreen(Game game){
-        super(game);
-        citiesRemaining = game.getPlanet().citiesRemaining();
-        numberOfMissiles = game.getNumberOfMissiles();
-        particlesDestroyed = game.getParticlesDestroyed();
-        lvlNumber = game.getLvlNumber();
-        score = game.getScore();
+    public GameOverScreen(GameModel gameModel){
+        super(gameModel);
+        citiesRemaining = gameModel.getPlanet().citiesRemaining();
+        numberOfMissiles = gameModel.getNumberOfMissiles();
+        particlesDestroyed = gameModel.getParticlesDestroyed();
+        lvlNumber = gameModel.getLvlNumber();
+        score = gameModel.getScore();
     }
 
     public void draw(){
@@ -54,7 +54,7 @@ public class GameOverScreen extends Screen{
 
 
         /*SUBTOTAL*/
-        int subTotal = game.calculateSubTotal();
+        int subTotal = gameModel.calculateSubTotal();
         app.text("SUBTOTAL: " + subTotal, 600, 340);
 
         /*NEW SCORE*/

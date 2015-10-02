@@ -1,7 +1,7 @@
 package alex.wilton.cs4303.p1.game.screen;
 
 import alex.wilton.cs4303.p1.game.App;
-import alex.wilton.cs4303.p1.game.Game;
+import alex.wilton.cs4303.p1.game.GameModel;
 
 /**
  * Class for displaying End of Level Screen
@@ -9,13 +9,13 @@ import alex.wilton.cs4303.p1.game.Game;
 public class EndOfLvlScreen extends Screen{
     int citiesRemaining, numberOfMissiles, particlesDestroyed, lvlNumber, score;
 
-    public EndOfLvlScreen(Game game){
-        super(game);
-        citiesRemaining = game.getPlanet().citiesRemaining();
-        numberOfMissiles = game.getNumberOfMissiles();
-        particlesDestroyed = game.getParticlesDestroyed();
-        lvlNumber = game.getLvlNumber();
-        score = game.getScore();
+    public EndOfLvlScreen(GameModel gameModel){
+        super(gameModel);
+        citiesRemaining = gameModel.getPlanet().citiesRemaining();
+        numberOfMissiles = gameModel.getNumberOfMissiles();
+        particlesDestroyed = gameModel.getParticlesDestroyed();
+        lvlNumber = gameModel.getLvlNumber();
+        score = gameModel.getScore();
     }
 
 
@@ -51,7 +51,7 @@ public class EndOfLvlScreen extends Screen{
         app.textAlign(app.RIGHT);
         app.text((5 * particlesDestroyed), 600, 310);
         app.text(" (5 X " + particlesDestroyed + ")   ", 530, 310);
-        int subTotal = game.calculateSubTotal();
+        int subTotal = gameModel.calculateSubTotal();
         app.text("SUBTOTAL: " + subTotal, 600, 340);
 
         int oldScore = score;
@@ -78,13 +78,13 @@ public class EndOfLvlScreen extends Screen{
     public void mousePressed(){
         /*Listener for SHOP button*/
         if( 110 <= app.mouseX && app.mouseX <= 110 + 180 && 500 <= app.mouseY && app.mouseY <= 500 + 50){
-            game.calculateScoreSetupNextLvlAndVisitShop();
+            gameModel.calculateScoreSetupNextLvlAndVisitShop();
         }
 
         /*Listener for SKIP SHOP button*/
         if( 350 <= app.mouseX && app.mouseX <= 350 + 180 && 500 <= app.mouseY && app.mouseY <= 500 + 50){
-            game.calculateScoreSetupNextLvlAndVisitShop();
-            game.startLevel();
+            gameModel.calculateScoreSetupNextLvlAndVisitShop(); //changes stage to SHOP
+            gameModel.startLevel(); //skip shop by changing stage to PLAY
         }
     }
 
